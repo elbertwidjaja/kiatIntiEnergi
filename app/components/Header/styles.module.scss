@@ -1,0 +1,49 @@
+@import "../../styles/spacing.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-3 $space-5;
+  background-color: var(--sky-800);
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: none;
+}
+
+.showNav {
+  display: block; /* Show the navbar when the showNav class is present */
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.mobileMenu {
+  display: block; /* Show the mobile menu on all screens */
+  cursor: pointer;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}

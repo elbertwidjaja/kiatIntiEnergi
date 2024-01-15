@@ -1,0 +1,36 @@
+$bp-mobile: "min-width: 320";
+$bp-tablet: "min-width: 768";
+$bp-laptop: "min-width: 1152";
+$bp-desktop: "min-width: 1440";
+
+@mixin media($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media (min-width: 1152px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+@mixin media-width($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}

@@ -1,0 +1,21 @@
+/* styles.module.scss */
+
+.overlay {
+  position: relative;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Adjust as needed */
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px; /* Adjust as needed */
+  /* Other text styles */
+}

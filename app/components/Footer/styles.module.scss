@@ -1,0 +1,48 @@
+.footerContainer {
+  padding: 20px;
+  background-color: var(--neutral-900);
+  color: var(--neutral-50);
+
+  a,
+  span,
+  p {
+    color: var(--neutral-50);
+  }
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.sectionContainer {
+  margin-right: 20px;
+}
+
+.titleText {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.labelText {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.line {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.bottomContainer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}

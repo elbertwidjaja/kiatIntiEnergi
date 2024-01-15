@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px; /* Rounded corners */
+  background-color: var(--sky-500);
+  color: var(--neutral-50);
+
+  /* Styles for medium size (default) */
+  &.medium {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* Additional styling for different sizes */
+  &.small {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  &.large {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+}

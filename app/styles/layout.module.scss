@@ -1,0 +1,19 @@
+@import "./breakpoint.scss";
+@import "./spacing.scss";
+
+.constrain {
+  padding-left: $space-4;
+  padding-right: $space-4;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: red;
+  @include media(mobile) {
+    max-width: 768px;
+  }
+  @include media(tablet) {
+    max-width: 1152px;
+  }
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
