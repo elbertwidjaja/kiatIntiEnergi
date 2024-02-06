@@ -1,6 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import javaFilter from "../../../public/JAVA FILTER.png";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 interface InfoCardProps {
   name: string;
@@ -9,11 +10,14 @@ interface InfoCardProps {
 function InfoCard({ name }: InfoCardProps) {
   return (
     <div className={styles["info-card"]}>
-      <img
-        src="https://images.bisnis.com/thumb/posts/2018/02/16/739535/solar-cell.jpg?w=450&h=237"
-        alt=""
+      <Image
+        src={javaFilter}
+        alt="product picture"
+        width={450}
+        height={250}
+        loading="lazy"
       />
-      <button>Click me</button>
+      <button>JAVA FILTER</button>
       <h1>{name}</h1>
       <p>🔥Recommended</p>
     </div>

@@ -1,15 +1,11 @@
-/* styles.module.scss */
-
 .overlay {
   position: relative;
-  width: 100%;
-  height: 540px;
 }
 
-.bannerImage {
+.imageContainer {
+  position: relative;
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Adjust as needed */
+  height: auto; /* Allow the height to be dynamic */
 }
 
 .bannerText {
@@ -18,5 +14,5 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 24px; /* Adjust as needed */
+  font-size: 24px;
 }
