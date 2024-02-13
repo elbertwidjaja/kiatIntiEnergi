@@ -5,7 +5,7 @@
 .imageContainer {
   position: relative;
   width: 100%;
-  height: auto; /* Allow the height to be dynamic */
+  height: auto;
 }
 
 .bannerText {
@@ -15,4 +15,16 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 24px;
+  text-align: center;
+
+  h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 100px;
+  }
+
+  span {
+    color: black;
+    font-weight: 700;
+  }
 }

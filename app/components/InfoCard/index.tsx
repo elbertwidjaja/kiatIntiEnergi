@@ -1,25 +1,27 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import javaFilter from "../../../public/JAVA FILTER.png";
+import javaFilterLogo from "../../../public/LOGO JAVA FILTER.png";
 import styles from "./styles.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface InfoCardProps {
-  name: string;
+  name: ReactNode;
+  logo: StaticImageData;
+  image: StaticImageData;
 }
 
-function InfoCard({ name }: InfoCardProps) {
+function InfoCard({ name, image, logo }: InfoCardProps) {
   return (
     <div className={styles["info-card"]}>
+      <Image src={logo} alt="logo jaya filter" loading="lazy" />
       <Image
-        src={javaFilter}
+        src={image}
         alt="product picture"
         width={450}
         height={250}
         loading="lazy"
       />
-      <button>JAVA FILTER</button>
-      <h1>{name}</h1>
-      <p>🔥Recommended</p>
+      {name}
     </div>
   );
 }

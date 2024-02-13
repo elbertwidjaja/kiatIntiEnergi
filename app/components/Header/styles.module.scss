@@ -19,7 +19,7 @@
 }
 
 .showNav {
-  display: block; /* Show the navbar when the showNav class is present */
+  display: block;
 }
 
 .navList {
@@ -33,11 +33,10 @@
 }
 
 .mobileMenu {
-  display: block; /* Show the mobile menu on all screens */
+  display: block;
   cursor: pointer;
 }
 
-/* Media Query for responsiveness */
 @media only screen and (min-width: 768px) {
   .navbar {
     display: flex;

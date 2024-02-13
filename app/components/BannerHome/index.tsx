@@ -4,8 +4,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 
 function BannerHome() {
-  // Set a target height between 250px and 300px
-  const targetHeight = Math.floor(Math.random() * 500) + 250;
+  const targetHeight = Math.floor(Math.random() * 500) + 350;
 
   return (
     <div className={styles.overlay}>
@@ -21,7 +20,10 @@ function BannerHome() {
           loading="lazy"
         />
       </div>
-      <div className={styles.bannerText}>Your Banner Text</div>
+      <div className={styles.bannerText}>
+        <h1>Temukan Solusi Air Panas & Air Bersih</h1>
+        <span>Cocok untuk kebutuhan rumah, komersial, industri</span>
+      </div>
     </div>
   );
 }

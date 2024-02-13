@@ -12,7 +12,7 @@ const Header = () => {
           src={kiatIntiEnergi}
           alt="kiat Inti Energi"
           loading="lazy"
-          height={100}
+          height={60}
         />
       </div>
       <nav className={styles.navbar}>
