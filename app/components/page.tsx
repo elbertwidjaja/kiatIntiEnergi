@@ -10,7 +10,6 @@ function testing() {
     <>
       <Footer />
       <br />
-      <InfoCard name="Solar Panel Jaya" />
       <br />
       <Button title="hi there" size="s" />
       <br />

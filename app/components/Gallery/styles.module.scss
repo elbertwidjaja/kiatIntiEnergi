@@ -1,0 +1,10 @@
+.galleryContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galleryPicture {
+  display: flex;
+  gap: 32px;
+}

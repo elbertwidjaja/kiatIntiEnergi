@@ -4,6 +4,27 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  gap: 48px;
+  background-image: url(../public/greenEnergy.png);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  color: white;
+
+  h1 {
+    font-size: 58px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.brandKami {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
 .infoCardContainer {

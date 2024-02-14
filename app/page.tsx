@@ -10,6 +10,7 @@ import solarjayaLogo from "../public/LOGO SOLARJAYA.png";
 import solarJaya from "../public/SOLARJAYA Product.png";
 import visiSolarLogo from "../public/logo visi solar.png";
 import visiSolar from "../public/VISI SOLAR Product.png";
+import greenEnergy from "../public/greenEnergy.png";
 import styles from "./styles.module.scss";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     <main>
       <Header />
       <BannerHome />
+      <p className={styles.brandKami}>Brand Kami</p>
       <div className={styles.infoCardContainer}>
         <InfoCard
           name={
