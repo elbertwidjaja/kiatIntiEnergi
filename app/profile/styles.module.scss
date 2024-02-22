@@ -1,0 +1,41 @@
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+  composes: constrain from global;
+
+  h1 {
+    font-size: 38px;
+    line-height: 150%;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+  }
+}
+.goalContainer {
+  display: flex;
+  max-width: 1200px;
+  composes: constrain from global;
+
+  h1 {
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+.mission {
+  flex-direction: row-reverse;
+  font-size: 18px;
+  line-height: 150%;
+}

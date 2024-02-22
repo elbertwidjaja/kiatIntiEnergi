@@ -6,7 +6,6 @@
   padding-right: $space-4;
   margin-right: auto;
   margin-left: auto;
-  background-color: red;
   @include media(mobile) {
     max-width: 768px;
   }

@@ -13,12 +13,24 @@ interface InfoCardProps {
 function InfoCard({ name, image, logo }: InfoCardProps) {
   return (
     <div className={styles["info-card"]}>
-      <Image src={logo} alt="logo jaya filter" loading="lazy" />
+      <Image
+        src={logo}
+        width={200}
+        height={300}
+        alt="logo jaya filter"
+        loading="lazy"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
+      />
       <Image
         src={image}
         alt="product picture"
-        width={450}
-        height={250}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }}
         loading="lazy"
       />
       {name}

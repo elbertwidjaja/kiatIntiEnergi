@@ -21,7 +21,8 @@ function BannerHome() {
         />
       </div>
       <div className={styles.bannerText}>
-        <h1>Temukan Solusi Air Panas & Air Bersih</h1>
+        <h1>Temukan Solusi Air</h1>
+        <h1 className={styles.bannerTextSecondary}>Panas & Air Bersih</h1>
         <span>Cocok untuk kebutuhan rumah, komersial, industri</span>
       </div>
     </div>

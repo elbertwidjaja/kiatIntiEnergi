@@ -4,12 +4,12 @@ import BannerHome from "./components/BannerHome";
 import InfoCard from "./components/InfoCard";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import javaFilterLogo from "../public/LOGO JAVA FILTER.png";
-import javaFilter from "../public/JAVA FILTER.png";
-import solarjayaLogo from "../public/LOGO SOLARJAYA.png";
-import solarJaya from "../public/SOLARJAYA Product.png";
-import visiSolarLogo from "../public/logo visi solar.png";
-import visiSolar from "../public/VISI SOLAR Product.png";
+import javaFilterLogo from "../public/Frame 35764.png";
+import javaFilter from "../public/Frame 35768.png";
+import solarjayaLogo from "../public/Frame 35765.png";
+import solarJaya from "../public/Frame 35767.png";
+import visiSolarLogo from "../public/Frame 35766.png";
+import visiSolar from "../public/Frame 35769.png";
 import greenEnergy from "../public/greenEnergy.png";
 import styles from "./styles.module.scss";
 
@@ -23,22 +23,32 @@ export default function Home() {
         <InfoCard
           name={
             <h1>
-              JAVA FILTER
-              <br /> WATER FILTER &amp; RO
+              SOLAR JAYA <br />
+              (DIRECT SYSTEM)
             </h1>
           }
-          image={javaFilter}
-          logo={javaFilterLogo}
-        />
-        <InfoCard
-          name={<h1>SOLAR JAYA</h1>}
           logo={solarjayaLogo}
           image={solarJaya}
         />
         <InfoCard
-          name={<h1>VISI SOLAR</h1>}
+          name={
+            <h1>
+              VISI SOLAR <br />
+              (INDIRECT SYSTEM)
+            </h1>
+          }
           logo={visiSolarLogo}
           image={visiSolar}
+        />
+        <InfoCard
+          name={
+            <h1>
+              JAVA FILTER
+              <br /> (PVC & FRP)
+            </h1>
+          }
+          image={javaFilter}
+          logo={javaFilterLogo}
         />
       </div>
       <div className={styles.descriptionContainer}>

@@ -21,7 +21,7 @@ const Header = () => {
             <Link href="/">Home</Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/about">Profil</Link>
+            <Link href="/profile">Profil</Link>
           </li>
           <li className={styles.navItem}>
             <Link href="/services">Produk</Link>
@@ -42,3 +42,48 @@ const Header = () => {
 };
 
 export default Header;
+// "use client";
+
+// import React, { useState } from "react";
+// import Link from "next/link";
+// import Image from "next/image";
+// import styles from "./styles.module.scss";
+
+// const Header = () => {
+//   const [showMenu, setShowMenu] = useState(false);
+
+//   const toggleMenu = () => {
+//     setShowMenu(!showMenu);
+//   };
+
+//   return (
+//     <header className={styles.header}>
+//       <div className={styles.logo}>
+//         <Image src="/logo.png" alt="Logo" width={80} height={80} />
+//       </div>
+//       <nav className={`${styles.navbar} ${showMenu ? styles.show : ""}`}>
+//         <ul className={styles.navList}>
+//           <li className={styles.navItem}>
+//             <Link href="/">Home</Link>
+//           </li>
+//           <li className={styles.navItem}>
+//             <Link href="/about">About</Link>
+//           </li>
+//           <li className={styles.navItem}>
+//             <Link href="/services">Services</Link>
+//           </li>
+//           <li className={styles.navItem}>
+//             <Link href="/contact">Contact</Link>
+//           </li>
+//         </ul>
+//       </nav>
+//       <div className={styles.mobileMenu} onClick={toggleMenu}>
+//         <div className={styles.bar}></div>
+//         <div className={styles.bar}></div>
+//         <div className={styles.bar}></div>
+//       </div>
+//     </header>
+//   );
+// };
+
+// export default Header;

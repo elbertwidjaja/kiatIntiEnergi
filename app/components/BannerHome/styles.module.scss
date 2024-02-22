@@ -1,3 +1,5 @@
+@import "@styles/breakpoint.scss";
+
 .overlay {
   position: relative;
   margin-bottom: 38px;
@@ -18,10 +20,27 @@
   font-size: 24px;
   text-align: center;
 
+  .bannerTextSecondary {
+    color: blue;
+    line-height: 100%;
+  }
+
   h1 {
-    color: black;
+    color: red;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 40px;
+
+    @include media(tablet) {
+      font-size: 60px;
+    }
+
+    @include media(laptop) {
+      font-size: 80px;
+    }
+
+    @include media(desktop) {
+      font-size: 100px;
+    }
   }
 
   span {
