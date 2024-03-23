@@ -51,41 +51,110 @@ import Image from "next/image";
 
 const Header = () => {
   const [isResponsive, setIsResponsive] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   const toggleResponsive = () => {
     setIsResponsive(!isResponsive);
   };
 
-  return (
-    <div
-      className={`${styles.topnav} ${
-        isResponsive ? `${styles.responsive}` : ""
-      }`}
-      id="myTopnav"
-    >
-      <a href="/">Inti Kiat Energi</a>
-      <Image />
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <div className={styles.dropdown}>
-        <button className={styles.dropbtn}>
-          Dropdown
-          <i className="fa fa-caret-down"></i>
-        </button>
-        <div className={styles.dropdownContent}>
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+  const handleShowMenu = () => {
+    setShowMenu(!showMenu);
+
+    const navMenu = document.getElementById("nav");
+    const menuButton = document.getElementById("menuButton");
+
+    if (navMenu && menuButton) {
+      if (window.innerWidth < 510) {
+        menuButton.style.transform = showMenu
+          ? "rotate(90deg)"
+          : "rotate(0deg)";
+        navMenu.style.transform = showMenu
+          ? "translateY(8rem)"
+          : "translateY(0rem)";
+      } else if (window.innerWidth < 768) {
+        menuButton.style.transform = showMenu
+          ? "rotate(90deg)"
+          : "rotate(0deg)";
+        navMenu.style.transform = showMenu
+          ? "translateY(4rem)"
+          : "translateY(0rem)";
+      }
+    }
+  };
+
+  const MobileHeader = () => {
+    return <div className="rightHeader"></div>;
+  };
+
+  const DesktopHeader = () => {
+    return (
+      <div>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div className={styles.dropdown}>
+          <button className={styles.dropbtn}>
+            Dropdown
+            <i className="fa fa-caret-down"></i>
+          </button>
+          <div className={styles.dropdownContent}>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
+        <a href="profile">Profil</a>
       </div>
-      <a href="profile">Profil</a>
-      <a
+    );
+  };
+
+  return (
+    <div className={styles.topnav} id="myTopnav">
+      <header className={styles.header}>
+        <div className={styles.leftHeader}>
+          <a href="/">Inti Kiat Energi</a>
+        </div>
+
+        <div className={styles.rightHeader}>
+          <button
+            className={styles.menuButton}
+            id="menuButton"
+            onClick={handleShowMenu}
+          >
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+          </button>
+
+          <div className={styles.mask}></div>
+
+          <div className={styles.navContainer}>
+            <div className={styles.nav} id="nav">
+              <a href="/">Home</a>
+              <a href="/profile">Profil</a>
+              <div className={styles.dropdown}>
+                <button className={styles.dropbtn}>
+                  Dropdown
+                  <i className="fa fa-caret-down"></i>
+                </button>
+                <div className={styles.dropdownContent}>
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <a href="profile">Dealers</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* <a
         style={{ fontSize: "15px" }}
         className={styles.icon}
         onClick={toggleResponsive}
       >
         &#9776;
-      </a>
+      </a> */}
     </div>
   );
 };
