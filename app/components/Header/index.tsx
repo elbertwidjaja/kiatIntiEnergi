@@ -59,11 +59,18 @@ const Header = () => {
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
-
+  
     const navMenu = document.getElementById("nav");
-    console.log(navMenu)
-    if (navMenu) {
-      navMenu.style.transform = showMenu ? `translateY(4rem)` : `translateY(0rem)`;
+    const menuButton = document.getElementById("menuButton");
+  
+    if (navMenu && menuButton) {
+      if (window.innerWidth < 510) {
+        menuButton.style.transform = showMenu ? "rotate(90deg)" : "rotate(0deg)";
+        navMenu.style.transform = showMenu ? "translateY(8rem)" : "translateY(0rem)";
+      } else if (window.innerWidth < 768) {
+        menuButton.style.transform = showMenu ? "rotate(90deg)" : "rotate(0deg)";
+        navMenu.style.transform = showMenu ? "translateY(4rem)" : "translateY(0rem)";
+      }
     }
   };
 
@@ -100,7 +107,7 @@ const Header = () => {
         </div>
 
         <div className={styles.rightHeader}>
-          <button className={styles.menuButton} onClick={handleShowMenu}>
+          <button className={styles.menuButton} id="menuButton" onClick={handleShowMenu}>
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>

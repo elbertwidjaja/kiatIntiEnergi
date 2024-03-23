@@ -2,9 +2,8 @@ import React from "react";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import logo1 from "../../../public/Frame 35764.png";
-import logo2 from "../../../public/Frame 35765.png";
-import logo3 from "../../../public/Frame 35766.png";
+import logo from "../../../public/KiatIntiEnergi_Logo.png";
+
 
 const Footer = () => (
   <footer className={styles.footerContainer}>
@@ -37,9 +36,8 @@ const Footer = () => (
         </section>
       </div>
       <div className={styles.rightContainer}>
-        <Image src={logo1} alt="" className={styles.logo} />
-        <Image src={logo2} alt="" className={styles.logo} />
-        <Image src={logo3} alt="" className={styles.logo} />
+        <Image src={logo} alt="" className={styles.logo} />
+
       </div>
     </div>
     <hr className={styles.line} />
