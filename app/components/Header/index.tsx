@@ -59,17 +59,25 @@ const Header = () => {
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
-  
+
     const navMenu = document.getElementById("nav");
     const menuButton = document.getElementById("menuButton");
-  
+
     if (navMenu && menuButton) {
       if (window.innerWidth < 510) {
-        menuButton.style.transform = showMenu ? "rotate(90deg)" : "rotate(0deg)";
-        navMenu.style.transform = showMenu ? "translateY(8rem)" : "translateY(0rem)";
+        menuButton.style.transform = showMenu
+          ? "rotate(90deg)"
+          : "rotate(0deg)";
+        navMenu.style.transform = showMenu
+          ? "translateY(8rem)"
+          : "translateY(0rem)";
       } else if (window.innerWidth < 768) {
-        menuButton.style.transform = showMenu ? "rotate(90deg)" : "rotate(0deg)";
-        navMenu.style.transform = showMenu ? "translateY(4rem)" : "translateY(0rem)";
+        menuButton.style.transform = showMenu
+          ? "rotate(90deg)"
+          : "rotate(0deg)";
+        navMenu.style.transform = showMenu
+          ? "translateY(4rem)"
+          : "translateY(0rem)";
       }
     }
   };
@@ -107,7 +115,11 @@ const Header = () => {
         </div>
 
         <div className={styles.rightHeader}>
-          <button className={styles.menuButton} id="menuButton" onClick={handleShowMenu}>
+          <button
+            className={styles.menuButton}
+            id="menuButton"
+            onClick={handleShowMenu}
+          >
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
@@ -115,10 +127,10 @@ const Header = () => {
 
           <div className={styles.mask}></div>
 
-          <div className={styles.navContainer} >
+          <div className={styles.navContainer}>
             <div className={styles.nav} id="nav">
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
+              <a href="/">Home</a>
+              <a href="/profile">Profil</a>
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>
                   Dropdown
@@ -130,8 +142,6 @@ const Header = () => {
                   <a href="#">Link 3</a>
                 </div>
               </div>
-              <a href="profile">Profil</a>
-              <a href="profile">About</a>
               <a href="profile">Dealers</a>
             </div>
           </div>

@@ -28,7 +28,7 @@
   p {
     font-size: 1.2rem;
     line-height: 150%;
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -63,19 +63,19 @@
   }
 
   h1 {
-    font-size: var(--xl-1);
+    font-size: $xl-1;
     line-height: 150%;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 18px;
+    font-size: $lg-1;
     line-height: 150%;
   }
 
   ul li {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -91,6 +91,10 @@
     gap: 2rem;
   }
 
+  .vision {
+    text-align: center;
+  }
+
   .goalContainer {
     flex-direction: column-reverse;
     height: 100%;
@@ -98,9 +102,8 @@
 
     .goalText {
       width: 100%;
-      text-align: justify;
       padding: 2rem;
-      font-size:var(--md-2);
+      font-size: var(--md-2);
       margin-bottom: 2rem;
       width: 100%;
 
@@ -122,7 +125,4 @@
       text-align: center;
     }
   }
-
-
-
 }
