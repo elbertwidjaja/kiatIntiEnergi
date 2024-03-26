@@ -143,6 +143,7 @@ const Header = () => {
                 </div>
               </div>
               <a href="profile">Dealers</a>
+              <a href="/product">Product</a>
             </div>
           </div>
         </div>
