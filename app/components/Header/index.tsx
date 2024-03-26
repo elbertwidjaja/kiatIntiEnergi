@@ -82,31 +82,6 @@ const Header = () => {
     }
   };
 
-  const MobileHeader = () => {
-    return <div className="rightHeader"></div>;
-  };
-
-  const DesktopHeader = () => {
-    return (
-      <div>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <div className={styles.dropdown}>
-          <button className={styles.dropbtn}>
-            Dropdown
-            <i className="fa fa-caret-down"></i>
-          </button>
-          <div className={styles.dropdownContent}>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <a href="profile">Profil</a>
-      </div>
-    );
-  };
-
   return (
     <div className={styles.topnav} id="myTopnav">
       <header className={styles.header}>
@@ -131,10 +106,10 @@ const Header = () => {
             <div className={styles.nav} id="nav">
               <a href="/">Home</a>
               <a href="/profile">Profil</a>
+
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>
                   Dropdown
-                  <i className="fa fa-caret-down"></i>
                 </button>
                 <div className={styles.dropdownContent}>
                   <a href="#">Link 1</a>
@@ -142,6 +117,7 @@ const Header = () => {
                   <a href="#">Link 3</a>
                 </div>
               </div>
+
               <a href="profile">Dealers</a>
               <a href="/product">Product</a>
             </div>
