@@ -1,8 +1,13 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./styles.module.scss";
 
-function GalleryCard({imageURL, children}) {
+interface GalleryCardProps {
+  imageURL: StaticImageData;
+  children: string;
+}
+
+function GalleryCard({imageURL, children}:GalleryCardProps) {
   return (
     <div className={styles.galleryCardContainer}>
       <div className={styles.galleryCardPicture}>
