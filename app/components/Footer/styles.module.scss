@@ -31,6 +31,10 @@
   }
 }
 
+.marginTop{
+  margin-top: 2rem;
+}
+
 .bottomContainer {
   display: flex;
   justify-content: space-between;
@@ -46,7 +50,8 @@
   margin-bottom: 2rem;
 
   .sectionContainer {
-    width: 10rem;
+    width: 12rem;
+    margin-right: 1rem;
   }
 
   .leftContainer {
@@ -88,6 +93,7 @@
 
       .sectionContainer {
         margin-bottom: 1rem;
+        width: 100%;
       }
 
       .leftContainer {

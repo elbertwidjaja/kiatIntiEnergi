@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import BannerHome from "./components/BannerHome";
 import InfoCard from "./components/InfoCard";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/GalleryCard";
 import javaFilterLogo from "../public/Frame 35764.png";
 import javaFilter from "../public/Frame 35768.png";
 import solarjayaLogo from "../public/Frame 35765.png";

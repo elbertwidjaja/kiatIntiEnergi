@@ -1,0 +1,57 @@
+@import "@styles/spacing.scss";
+@import "@styles/typography.scss";
+@import "@styles/theme.scss";
+
+.galleryCardContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .galleryCardPicture {
+    display: flex;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+
+    .image{
+      width: auto;
+      height: 20vw;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 26px;
+    color: var(--neutral-700);
+    margin-top: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .galleryCardContainer {
+    
+    .galleryCardPicture {
+  
+      .image{
+        height: 25vw;
+      }
+    }
+  
+    h2 {
+      text-align: center;
+      width: 90%;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--neutral-700);
+      margin-top: 1rem;
+    }
+  
+  }
+}
