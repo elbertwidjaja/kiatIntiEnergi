@@ -14,7 +14,11 @@ const Footer = () => (
           <Link href="/about">
             <span className={styles.labelText}>About Us</span>
           </Link>
+
+          <h2 className={`${styles.titleText} ${styles.marginTop}`}>Address</h2>
+          <div className={styles.labelText}>Rukan Paris Golf Lake Residence Blok A No.27, RT.10/RW.14, Cengkareng Tim., Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730</div>
         </section>
+
         <section className={styles.sectionContainer}>
           <h2 className={styles.titleText}>Social Media</h2>
           <a
@@ -33,6 +37,21 @@ const Footer = () => (
           >
             Instagram
           </a>
+
+          <h2 className={`${styles.titleText} ${styles.marginTop}`}>Phone Number</h2>
+          <div className={styles.labelText}>(021) 5437-6429</div>
+
+          <h2 className={`${styles.titleText} ${styles.marginTop}`}>Email</h2>
+          <div className={styles.labelText}>kiatintienergi@gmail.com</div>
+
+        </section>
+
+        <section className={styles.sectionContainer}>
+          <h2 className={styles.titleText}>Operational Hour </h2>
+          <div className={styles.labelText}>Monday - Friday (08:00 - 17:00)</div>
+          <div className={styles.labelText}>Saturday (08:00 - 17:00)</div>
+          <div className={styles.labelText}>Sunday (Close)</div>
+          
         </section>
       </div>
       <div className={styles.rightContainer}>

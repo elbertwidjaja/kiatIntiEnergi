@@ -109,12 +109,12 @@ const Header = () => {
 
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>
-                  Dropdown
+                  Gallery
                 </button>
                 <div className={styles.dropdownContent}>
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="/gallery/VisiSolar">Visi Solar</a>
+                  <a href="/gallery/SolarJaya">Solar Jaya</a>
+                  <a href="/gallery/JavaFilter">Java Filter</a>
                 </div>
               </div>
 
