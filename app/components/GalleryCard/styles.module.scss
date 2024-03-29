@@ -8,7 +8,8 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  //Max width for the contaier still confused
+  max-width: 400px;
 
   .galleryCardPicture {
     display: flex;
@@ -34,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
   .galleryCardContainer {
     .galleryCardPicture {
       .image {
@@ -55,7 +56,6 @@
 
 @media screen and (max-width: 768px) {
   .galleryCardContainer {
-
     h2 {
       font-size: 1rem;
     }

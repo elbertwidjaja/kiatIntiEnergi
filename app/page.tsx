@@ -60,10 +60,6 @@ export default function Home() {
           lingkungan.
         </p>
       </div>
-      <GalleryCard
-        title="test"
-        imageURL="https://www.w3schools.com/html/pic_trulli.jpg"
-      />
       <Footer />
     </main>
   );
