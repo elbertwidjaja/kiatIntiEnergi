@@ -2,8 +2,7 @@
 @import "@styles/typography.scss";
 @import "@styles/theme.scss";
 
-
-.galleryContainer{
+.galleryContainer {
   display: grid;
   width: 100%;
   min-height: 100vh;
@@ -13,8 +12,8 @@
   padding: 4rem;
 }
 
-@media screen and (max-width:768px) {
-  .galleryContainer{
+@media screen and (max-width: 768px) {
+  .galleryContainer {
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
     row-gap: 1rem;
