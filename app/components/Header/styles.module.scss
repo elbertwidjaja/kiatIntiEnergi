@@ -155,6 +155,7 @@
         .menuButton {
           display: block;
           z-index: 30;
+          
         }
 
         .mask {
@@ -212,7 +213,13 @@
 
       .rightHeader {
 
-        .menuButton {}
+        .menuButton {
+          width: 1.5rem;
+          
+          .bar{
+            margin: 0.4rem 0;
+          }
+        }
 
         .mask {}
 
