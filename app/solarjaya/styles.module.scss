@@ -1,127 +1,29 @@
+@import "@styles/breakpoint.scss";
+@import "@styles/spacing.scss";
+
 .productContainer {
-  padding: 4rem;
-
-  .firstContent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h1{
-      text-align: center;
-    }
-
-    p {
-      margin: 1rem 0;
-      text-align: center;
-      font-size: 1rem;
-    }
-
-    .imageContainer {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-
-      .productCardContainer {
-        width: 28vw;
-        height: 28vw;
-        cursor: pointer;
-        position: relative;
-        transform-style: preserve-3d;
-        transition: transform 0.6s;
-        border: solid 1px ;
-        border-radius: 1rem;
-
-        &:hover {
-          transform: rotateY(180deg);
-        }
-
-        .image {
-          width: 100%;
-          height: auto;
-          backface-visibility: hidden;
-        }
-
-        .spec {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          border-radius: 1rem;
-          position: absolute;
-          top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0;
-          background-color: var(--sky-600);
-          padding: 1rem;
-          transform: rotateY(180deg);
-          backface-visibility: hidden;
-
-          .descComponent {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 0.2rem;
-            height: 100%;
-            align-self: end;
-            width: 100%;
-            padding: 0.5rem;
-            overflow-y: none;
-          }
-
-          h2 {
-            font-size: 1rem;
-            height: 8%;
-            width: 100%;
-            text-align: center;
-            color: var(--neutral-200);
-          }
-        }
-      }
-    }
-  }
+  composes: constrain from global;
 }
 
-@media screen and (max-width: 1100px) {
-
-  .firstContent .imageContainer {
-    flex-direction: column;
-    row-gap: 2rem;
-
-    .productCardContainer {
-      width: 100%; /* Change width to 100% */
-      height: auto;
-
-      .spec {
-        .descComponent {
-          padding: 0.3rem;
-          overflow-y: scroll;
-        }
-  
-        h2 {
-          font-size: 0.8rem;
-        }
-      }
-    }
-  }
+.ourProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $space-12;
 }
 
-@media screen and (max-width: 800px) {
-  .productContainer .firstContent .imageContainer .productCardContainer {
-    width: 100%; /* Change width to 100% */
-    height: 100%;
+.productCardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .spec {
-      .descComponent {
-        padding: 0.3rem;
-      }
+.productCard {
+  background-color: red;
+  min-width: 300px;
+}
 
-      h2 {
-        font-size: 1rem;
-      }
-    }
-  }
+.productdesc {
+  display: flex;
+  gap: 5px;
 }
