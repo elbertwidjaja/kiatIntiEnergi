@@ -2,7 +2,7 @@ import React from "react";
 import picture from "@/public/Frame 35769.png";
 import styles from "./styles.module.scss";
 import MainLayout from "../components/MainLayout";
-import ProductCard from "../components/productCard";
+
 import img from "../../public/Frame 35767.png";
 import { solarjaya } from "@/data/productData";
 
