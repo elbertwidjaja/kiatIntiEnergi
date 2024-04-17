@@ -33,96 +33,96 @@ function SolarJaya() {
             <CardBody>
               <Image src={img} alt="Solar Jaya" />
               <Stack mt="6" spacing="3">
-                <Heading size="md">JS 131 S (Cocok untuk 2-4 orang)</Heading>
+                <Heading size="md" className={styles.productTitle}>JS 131 S (Cocok untuk 2-4 orang)</Heading>
               </Stack>
               <div>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Diameter Tangki </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     110x47x47 (cm)
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Material Tangki </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     Stainless Steel 316 L (cm)
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Dimensi Panel </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     180x100x80
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Material Box Panel </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     Galvalum
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Tebal Tangki Dalam </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     3mm
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Berat Kosong Tangki</Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     48 Kg
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Jumlah Panel </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     1 Panel
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Berat Kosong Panel </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     42 Kg
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Berat Isi Panel </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     45 Kg
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Backup Electric Heater </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     500 Watt
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Jumlah Alur Pipa Riser </Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     8 Alur
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Insulation Tangki</Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     High Density Polyethane 7cm
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Cover Panel Kolekter</Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     Ice Tempered Glass
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Material Absorber</Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     Tembaga (CU) Dm5.8 (Header) 3.8 (Riser)
                   </Text>
                 </span>
                 <span className={styles.productdesc}>
                   <Text fontSize="sm">Aksesoris</Text>
-                  <Text fontSize="sm" as="b">
+                  <Text fontSize="sm" as="b" className={styles.productValue}>
                     ELCB, Safety Valve, Check Valve
                   </Text>
                 </span>

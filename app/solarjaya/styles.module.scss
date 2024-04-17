@@ -21,9 +21,28 @@
 .productCard {
   background-color: red;
   min-width: 300px;
+  margin-bottom: 1rem;
 }
 
 .productdesc {
   display: flex;
+  justify-content: space-between;
   gap: 5px;
+  margin-top: 0.5rem;
+}
+
+.productValue{
+  text-align: right;
+}
+
+.productTitle{
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .productCardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
