@@ -4,7 +4,7 @@ import img from "../../public/Frame 35767.png";
 import ProductHero from "./ProductHero";
 import SOLARJAYA_DATA from "./data";
 import styles from "./styles.module.scss";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/CardProduct/index";
 
 function SolarJaya() {
   return (
