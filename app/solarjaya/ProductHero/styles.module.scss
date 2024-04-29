@@ -1,0 +1,102 @@
+@import "@styles/theme.scss";
+@import "@styles/typography.scss";
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem;
+
+  .productItemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .imageContainer {
+      width: 50%;
+      display: flex;
+      height: 45vw;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
+
+      .imageStart {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60%;
+        height: auto;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .imageEnd {
+        position: absolute;
+        width: 60%;
+        height: auto;
+        top: 0;
+        right: 0;
+        border-radius: 0.5rem;
+        -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .productText {
+      width: 50%;
+      padding: 4rem;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      ul,
+      li {
+        margin-bottom: 1.2rem;
+        font-size: 1.2rem;
+        color: var(--neutral-400);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .productContainer {
+    padding: 2rem;
+
+    .productItemContainer {
+      flex-direction: column;
+
+      .imageContainer {
+        width: 70%;
+      }
+
+      .productText {
+        padding: 0;
+        width: 70%;
+        margin-top: 2rem;
+
+        h1 {
+          font-size: 2.5rem;
+          text-align: justify;
+        }
+
+        ul,
+        li {
+          font-size: 1rem;
+          text-align: justify;
+        }
+      }
+    }
+
+    .reverse {
+      flex-direction: column-reverse;
+      margin-top: 2rem;
+    }
+  }
+}
