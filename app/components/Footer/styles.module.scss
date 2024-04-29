@@ -2,7 +2,7 @@
 @import "../../styles/theme.scss";
 
 .footerContainer {
-  padding: 28px;
+  padding: 5rem 10rem;
   background-color: var(--neutral-900);
   color: var(--neutral-50);
 
@@ -50,8 +50,8 @@
   margin-bottom: 2rem;
 
   .sectionContainer {
-    width: 12rem;
-    margin-right: 1rem;
+    width: 8rem;
+    margin-right: 5rem;
   }
 
   .leftContainer {
@@ -84,6 +84,8 @@
 
 @media screen and (max-width: 768px) {
   .footerContainer {
+    padding: 4rem 2rem;
+
     .bottomContainer {
       flex-direction: column;
     }
@@ -109,3 +111,5 @@
     }
   }
 }
+
+

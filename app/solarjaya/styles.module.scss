@@ -1,0 +1,48 @@
+@import "@styles/breakpoint.scss";
+@import "@styles/spacing.scss";
+
+.productContainer {
+  composes: constrain from global;
+}
+
+.ourProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $space-12;
+}
+
+.productCardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.productCard {
+  background-color: red;
+  min-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.productdesc {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 0.5rem;
+}
+
+.productValue{
+  text-align: right;
+}
+
+.productTitle{
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .productCardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}

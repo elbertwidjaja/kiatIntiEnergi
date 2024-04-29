@@ -29,6 +29,7 @@ export default function Home() {
           }
           logo={solarjayaLogo}
           image={solarJaya}
+          url="/gallery/SolarJaya"
         />
         <InfoCard
           name={
@@ -39,6 +40,7 @@ export default function Home() {
           }
           logo={visiSolarLogo}
           image={visiSolar}
+          url="/gallery/VisiSolar"
         />
         <InfoCard
           name={
@@ -49,6 +51,7 @@ export default function Home() {
           }
           image={javaFilter}
           logo={javaFilterLogo}
+          url="/gallery/JavaFilter"
         />
       </div>
       <div className={styles.descriptionContainer}>

@@ -1,18 +1,24 @@
+'use client'
 import React, { ReactNode } from "react";
-import javaFilter from "../../../public/JAVA FILTER.png";
-import javaFilterLogo from "../../../public/LOGO JAVA FILTER.png";
 import styles from "./styles.module.scss";
 import Image, { StaticImageData } from "next/image";
+
 
 interface InfoCardProps {
   name: ReactNode;
   logo: StaticImageData;
   image: StaticImageData;
+  url: string;
 }
 
-function InfoCard({ name, image, logo }: InfoCardProps) {
+function InfoCard({ name, image, logo, url }: InfoCardProps) {
+
+  const handleClick = () => {
+    window.location.href = url; // Corrected handling of href
+  };
+
   return (
-    <div className={styles["info-card"]}>
+    <button className={styles["info-card"]} onClick={handleClick} >
       <Image
         src={logo}
         width={200}
@@ -34,7 +40,7 @@ function InfoCard({ name, image, logo }: InfoCardProps) {
         loading="lazy"
       />
       {name}
-    </div>
+    </button>
   );
 }
 
