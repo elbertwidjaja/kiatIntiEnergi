@@ -12,7 +12,10 @@ import Image from "next/image";
 function SolarJaya() {
   return (
     <MainLayout>
-      <ProductHero />
+      <ProductHero
+        title="Solar Jaya"
+        description=" SOLARJAYA adalah brand andalan kami dalam Solar Water Heater (Model Flat - Direct System) dengan standar Australia sejak 2005. Produk ini dibanggakan karena terbuat dari komponen berkualitas tinggi yang diproduksi secara lokal di Indonesia."
+      />
       <h1 className={styles.principleTitle}>Bagaimana Solar Jaya Berkerja</h1>
       <section className={styles.principleContainer}>
         <div className={styles.principle}>

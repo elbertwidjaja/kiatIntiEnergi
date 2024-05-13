@@ -10,12 +10,12 @@ import SocialMedia from "../components/SocialMedia";
 function SolarJaya() {
   return (
     <MainLayout>
-      <ProductHero />
-      <div className={styles.productCardContainer}>
-        {JAVAFILTER_DATA.map((data, index) => (
-          <ProductCard key={index} data={data} img={img} />
-        ))}
-      </div>
+      <ProductHero
+        title={"Java Filter"}
+        description={
+          "JAVA FILTER, hasil rebranding dari JAYA FRESH, adalah brand kami yang berfokus pada Water Filter, Water Treatment, dan Reverse Osmosis. Kami berkomitmen untuk mengatasi masalah air seperti Zat Besi (Fe), Mangan (Mn), Zat Kapur, kotoran, bau, rasa, serta mengurangi kontaminan dalam air dengan menyesuaikan media filter air dengan kondisi air pelanggan."
+        }
+      />
       <SocialMedia
         tiktokUrl="httpshttps://www.tiktok.com/@javafilter_official"
         instagramUrl="https://www.instagram.com/javafilter/"
