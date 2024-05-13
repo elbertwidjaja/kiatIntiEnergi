@@ -1,8 +1,49 @@
 @import "@styles/breakpoint.scss";
 @import "@styles/spacing.scss";
+@import "@styles/typography.scss";
 
 .productContainer {
   composes: constrain from global;
+}
+
+.advantageTitle {
+  font-size: $xl-2;
+  font-weight: $semi-bold;
+  margin-bottom: $space-7;
+  text-align: center;
+}
+
+.principleContainer {
+  composes: constrain from global;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: $space-12;
+  flex-direction: column;
+
+  @include media(tablet) {
+    flex-direction: row;
+  }
+}
+
+.principle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.principleDescription {
+  font-size: $lg-2;
+  font-weight: $medium;
+
+  li {
+    list-style-type: disc;
+  }
+
+  @include media(tablet) {
+    list-style-type: none;
+  }
 }
 
 .ourProduct {
