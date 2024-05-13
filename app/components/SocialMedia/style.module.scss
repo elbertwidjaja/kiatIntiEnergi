@@ -1,0 +1,25 @@
+@import "@styles/spacing.scss";
+@import "@styles/typography";
+
+.socialmMediaContainer {
+  composes: constrain from global;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-17;
+  gap: $space-10;
+  margin-top: $space-14;
+}
+
+.findUsOn {
+  font-size: $xl-1;
+  font-weight: bold;
+}
+
+.socialmMediaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-15;
+}

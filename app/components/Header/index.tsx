@@ -63,16 +63,15 @@ const Header = () => {
               <a href="/profile">Profil</a>
 
               <div className={styles.dropdown}>
-                <button className={styles.dropbtn}>Gallery</button>
+                <button className={styles.dropbtn}>Product</button>
                 <div className={styles.dropdownContent}>
-                  <a href="/gallery/JavaFilter">Visi Solar</a>
-                  <a href="/gallery/JavaFilter">Solar Jaya</a>
-                  <a href="/gallery/JavaFilter">Java Filter</a>
+                  <a href="/visisolar">Visi Solar</a>
+                  <a href="/solarjaya">Solar Jaya</a>
+                  <a href="/javafilter">Java Filter</a>
                 </div>
               </div>
-
-              <a href="profile">Dealers</a>
-              <a href="/solarjaya">Product</a>
+              <a href="#">Dealers</a>
+              <a href="#">Product</a>
             </div>
           </div>
         </div>
