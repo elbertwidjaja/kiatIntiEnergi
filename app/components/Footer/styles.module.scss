@@ -3,13 +3,13 @@
 
 .footerContainer {
   padding: 5rem 10rem;
-  background-color: var(--neutral-900);
-  color: var(--neutral-50);
+  background-color: var(--main-70);
+  color: var(--white);
 
   a,
   span,
   p {
-    color: var(--neutral-50);
+    color: var(--white);
   }
 
   .titleText {
@@ -20,7 +20,7 @@
 
   .labelText {
     display: block;
-    color: var(--neutral-400);
+    color: var(--white);
     margin-bottom: 5px;
     text-decoration: none;
     margin-bottom: 0.5rem;
@@ -40,7 +40,7 @@
   justify-content: space-between;
 
   p {
-    color: var(--neutral-400);
+    color: var(--white);
   }
 }
 

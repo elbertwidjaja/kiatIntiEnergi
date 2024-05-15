@@ -1,5 +1,9 @@
-.info-card {
-  background-color: var(--sky-100);
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.infoCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,29 +11,12 @@
   width: 300px;
   padding: 20px;
   text-align: center;
-  margin-bottom: 80px;
+  gap: $space-2;
 }
 
-.info-card img {
-  max-width: 100%;
-}
-
-.info-card h1 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  color: var(--sky-900);
-}
-
-.info-card button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.info-card button:hover {
-  background-color: #0056b3;
+.brandName {
+  margin-bottom: $space-2;
+  composes: lg3 from global;
+  font-weight: $medium;
+  letter-spacing: 0;
 }

@@ -2,7 +2,7 @@
 @import "../../styles/theme.scss";
 
 .topnav {
-  background-color: var(--neutral-800);
+  background-color: var(--black);
   display: flex;
   position: sticky;
   width: 100%;
@@ -13,7 +13,7 @@
   a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--main-10);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -43,15 +43,14 @@
       .menuButton {
         width: 2rem;
         display: none;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         .bar {
           width: 100%;
           border: solid 2px var(--neutral-300);
-          margin: .5rem 0;
+          margin: 0.5rem 0;
           border-radius: 10rem;
         }
-
       }
 
       .navContainer {
@@ -63,14 +62,12 @@
           a {
             &:hover {
               background-color: var(--neutral-700);
-
             }
           }
         }
       }
     }
   }
-
 
   .icon {
     display: none;
@@ -90,9 +87,8 @@
       font-family: inherit;
       margin: 0;
 
-
       &:hover,
-      &+.dropdownContent:hover {
+      & + .dropdownContent:hover {
         background-color: var(--neutral-700);
       }
     }
@@ -134,28 +130,21 @@
     }
   }
 
-  .dropbtn:hover+.dropdownContent {
+  .dropbtn:hover + .dropdownContent {
     display: flex;
     background-color: var(--neutral-700);
-
   }
 }
 
 @media screen and (max-width: 768px) {
   .topnav {
-
-
     .header {
-
-
-
       .rightHeader {
         position: relative;
 
         .menuButton {
           display: block;
           z-index: 30;
-          
         }
 
         .mask {
@@ -181,7 +170,7 @@
         .nav {
           display: flex;
           translate: 0 -4rem;
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
           justify-content: space-evenly;
           align-items: center;
           font-size: var(--sm-4);
@@ -193,49 +182,35 @@
           z-index: -100;
           background-color: var(--neutral-900);
         }
-
-        // .nav{
-        //   display: none;
-        // }
       }
-
     }
   }
 }
 
 @media screen and (max-width: 510px) {
   .topnav {
-
-
     .header {
-
-
-
       .rightHeader {
-
         .menuButton {
           width: 1.5rem;
-          
-          .bar{
+
+          .bar {
             margin: 0.4rem 0;
           }
         }
 
-        .mask {}
+        .mask {
+        }
 
-        .navContainer {}
+        .navContainer {
+        }
 
         .nav {
           height: 8rem;
           translate: 0 -8rem;
           flex-wrap: wrap;
         }
-
-        // .nav{
-        //   display: none;
-        // }
       }
-
     }
   }
 }

@@ -1,30 +1,50 @@
+"use client";
+
 import React from "react";
-import jumbotron from "../../../public/Website Homepage (Top).png";
 import styles from "./styles.module.scss";
 import Image from "next/image";
+import HorizontalSlider from "../HorizontalSlider";
+
+type ItemType = {
+  id: number;
+  src: string;
+  alt: string;
+};
+
+const data = [
+  {
+    id: 1,
+    src: "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Hero%20Background%20Contoh%20(1).jpg?alt=media&token=6b6e9b0e-3800-478f-a1b3-783848206760",
+    alt: "testing_1",
+  },
+  {
+    id: 2,
+    src: "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Hero%20Background%20Contoh%20(1).jpg?alt=media&token=6b6e9b0e-3800-478f-a1b3-783848206760",
+    alt: "testing_2",
+  },
+  {
+    id: 2,
+    src: "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Hero%20Background%20Contoh%20(1).jpg?alt=media&token=6b6e9b0e-3800-478f-a1b3-783848206760",
+    alt: "testing_2",
+  },
+  {
+    id: 2,
+    src: "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Hero%20Background%20Contoh%20(1).jpg?alt=media&token=6b6e9b0e-3800-478f-a1b3-783848206760",
+    alt: "testing_2",
+  },
+];
 
 function BannerHome() {
-  const targetHeight = Math.floor(Math.random() * 500) + 350;
-
   return (
     <div className={styles.overlay}>
-      <div
-        className={styles.imageContainer}
-        style={{ height: `${targetHeight}px` }}
-      >
-        <Image
-          src={jumbotron}
-          alt="Banner"
-          layout="fill"
-          objectFit="cover"
-          loading="lazy"
-        />
-      </div>
-      <div className={styles.bannerText}>
-        <h1>Temukan Solusi Air</h1>
-        <h1 className={styles.bannerTextSecondary}>Panas & Air Bersih</h1>
-        <span>Cocok untuk kebutuhan rumah, komersial, industri</span>
-      </div>
+      <HorizontalSlider
+        gap={16}
+        data={data}
+        keyExtractor={(item: ItemType) => item.id}
+        renderItem={({ item }: { item: ItemType }) => (
+          <Image width={1920} height={1080} src={item.src} alt={item.alt} />
+        )}
+      />
     </div>
   );
 }

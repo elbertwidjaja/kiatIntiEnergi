@@ -8,10 +8,6 @@ const Header = () => {
   const [isResponsive, setIsResponsive] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
 
-  const toggleResponsive = () => {
-    setIsResponsive(!isResponsive);
-  };
-
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
 
@@ -60,7 +56,7 @@ const Header = () => {
           <div className={styles.navContainer}>
             <div className={styles.nav} id="nav">
               <a href="/">Home</a>
-              <a href="/profile">Profil</a>
+              <a href="/profile">Tentang Kami</a>
 
               <div className={styles.dropdown}>
                 <button className={styles.dropbtn}>Product</button>
@@ -70,8 +66,10 @@ const Header = () => {
                   <a href="/javafilter">Java Filter</a>
                 </div>
               </div>
-              <a href="#">Dealers</a>
-              <a href="gallery">Gallery</a>
+              <a href="#">Produk</a>
+              <a href="#">Layanan</a>
+              <a href="#">Blog</a>
+              <a href="#">Hubungi Kami</a>
             </div>
           </div>
         </div>

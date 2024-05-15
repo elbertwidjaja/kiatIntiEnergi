@@ -1,8 +1,8 @@
-'use client'
 import React, { ReactNode } from "react";
 import styles from "./styles.module.scss";
 import Image, { StaticImageData } from "next/image";
-
+import { Button } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface InfoCardProps {
   name: ReactNode;
@@ -12,13 +12,8 @@ interface InfoCardProps {
 }
 
 function InfoCard({ name, image, logo, url }: InfoCardProps) {
-
-  const handleClick = () => {
-    window.location.href = url; // Corrected handling of href
-  };
-
   return (
-    <button className={styles["info-card"]} onClick={handleClick} >
+    <div className={styles.infoCard}>
       <Image
         src={logo}
         width={200}
@@ -39,8 +34,11 @@ function InfoCard({ name, image, logo, url }: InfoCardProps) {
         }}
         loading="lazy"
       />
-      {name}
-    </button>
+      <span className={styles.brandName}>{name}</span>
+      <Link href={url}>
+        <Button colorScheme="blue">Lihat Produk</Button>
+      </Link>
+    </div>
   );
 }
 

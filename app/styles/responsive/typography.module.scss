@@ -1,0 +1,162 @@
+@import "../typography.scss";
+@import "../breakpoint.scss";
+
+.sm4 {
+  font-size: $sm-4;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-s;
+}
+
+.md1 {
+  font-size: $sm-4;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-s;
+  @include media(tablet) {
+    font-size: $md-1;
+  }
+}
+
+.md2 {
+  font-size: $md-1;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-s;
+  @include media(tablet) {
+    font-size: $md-2;
+  }
+}
+
+.md3 {
+  font-size: $md-1;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-s;
+  @include media(tablet) {
+    font-size: $md-2;
+  }
+  @include media(desktop) {
+    font-size: $md-3;
+  }
+}
+
+.md4 {
+  font-size: $md-2;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-s;
+  @include media(tablet) {
+    font-size: $md-3;
+  }
+  @include media(desktop) {
+    font-size: $md-4;
+  }
+}
+
+.lg1 {
+  font-size: $md-3;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $md-3;
+  @include media(tablet) {
+    font-size: $md-4;
+    letter-spacing: $letter-spacing-l * $md-4;
+  }
+  @include media(desktop) {
+    font-size: $lg-1;
+    letter-spacing: $letter-spacing-l * $lg-1;
+  }
+}
+
+.lg2 {
+  font-size: $md-4;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $md-4;
+  @include media(tablet) {
+    font-size: $lg-1;
+    letter-spacing: $letter-spacing-l * $lg-1;
+  }
+  @include media(desktop) {
+    font-size: $lg-2;
+    letter-spacing: $letter-spacing-l * $lg-2;
+  }
+}
+
+.lg3 {
+  font-size: $lg-1;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $lg-1;
+  @include media(tablet) {
+    font-size: $lg-2;
+    letter-spacing: $letter-spacing-l * $lg-2;
+  }
+  @include media(desktop) {
+    font-size: $lg-3;
+    letter-spacing: $letter-spacing-l * $lg-3;
+  }
+}
+
+.lg4 {
+  font-size: $lg-2;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $lg-2;
+  @include media(tablet) {
+    font-size: $lg-3;
+    letter-spacing: $letter-spacing-l * $lg-3;
+  }
+  @include media(desktop) {
+    font-size: $lg-4;
+    letter-spacing: $letter-spacing-l * $lg-4;
+  }
+}
+
+.xl1 {
+  font-size: $lg-3;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $lg-3;
+  @include media(tablet) {
+    font-size: $lg-4;
+    letter-spacing: $letter-spacing-l * $lg-4;
+  }
+  @include media(desktop) {
+    font-size: $xl-1;
+    letter-spacing: $letter-spacing-l * $xl-1;
+  }
+}
+
+.xl2 {
+  font-size: $lg-4;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $lg-4;
+  @include media(tablet) {
+    font-size: $xl-1;
+    letter-spacing: $letter-spacing-l * $xl-1;
+  }
+  @include media(desktop) {
+    font-size: $xl-2;
+    letter-spacing: $letter-spacing-l * $xl-2;
+  }
+}
+
+.xl3 {
+  font-size: $xl-1;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $xl-1;
+  @include media(tablet) {
+    font-size: $xl-2;
+    letter-spacing: $letter-spacing-l * $xl-2;
+  }
+  @include media(desktop) {
+    font-size: $xl-3;
+    letter-spacing: $letter-spacing-l * $xl-3;
+  }
+}
+
+.xl4 {
+  font-size: $xl-2;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-l * $xl-2;
+  @include media(tablet) {
+    font-size: $xl-3;
+    letter-spacing: $letter-spacing-l * $xl-3;
+  }
+  @include media(desktop) {
+    font-size: $xl-4;
+    letter-spacing: $letter-spacing-l * $xl-4;
+  }
+}

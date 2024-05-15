@@ -1,0 +1,25 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.surveyContainer {
+  composes: constrain from global;
+  text-align: center;
+  composes: xl1 from global;
+  font-weight: $regular;
+  margin-bottom: $space-12;
+}
+
+.typewriter {
+  color: var(--main-bg);
+  font-weight: $bold;
+}
+
+.startNow {
+  margin-bottom: $space-8;
+}
+
+.surveyButton {
+  margin-top: $space-4;
+}

@@ -28,7 +28,6 @@ function ProductCard({
         <Image src={img} alt="Solar Jaya" />
         <div>
           {data.map((data) => {
-            console.log(data, "sss");
             return (
               <span key={data.descriptionTitle} className={styles.productdesc}>
                 <Text fontSize="sm">{data.descriptionTitle}</Text>

@@ -1,0 +1,69 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.swhContainer {
+  composes: constrain from global;
+  margin-bottom: $space-12;
+}
+
+.swh {
+  color: var(--main-bg);
+  text-align: center;
+  composes: xl1 from global;
+  font-weight: $semi-bold;
+  margin-bottom: $space-5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 16px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.gridItem {
+  padding: 16px;
+  max-width: 300px;
+  padding: $space-4;
+  // background: #f5f5f5;
+  //   border-radius: 8px;
+  //   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swhTitle {
+  color: var(--main-10);
+  composes: md4 from global;
+  font-weight: $semi-bold;
+  margin-bottom: $space-2;
+}
+
+.swhDescription {
+  font-weight: $medium;
+}
+
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5; /* Example background color for the picture area */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example shadow for the picture area */
+}
+
+@include media(tablet) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
