@@ -27,6 +27,15 @@
   padding-left: $space-8;
 }
 
+.ourProduct {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg);
+  margin-bottom: $space-12;
+  padding: $space-6;
+}
+
 .brandKami {
   text-align: center;
   font-size: 48px;
@@ -37,8 +46,7 @@
 .infoCardContainer {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  background-color: var(--bg);
+  gap: $space-10;
 }
 
 @media (max-width: 768px) {

@@ -5,7 +5,6 @@ import styles from "./styles.module.scss";
 function SWH() {
   return (
     <div className={styles.swhContainer}>
-      <h1 className={styles.swh}>Solar Water Heater</h1>
       <div className={styles.container}>
         <div className={styles.gridContainer}>
           {SWH_DATA.map((data) => (

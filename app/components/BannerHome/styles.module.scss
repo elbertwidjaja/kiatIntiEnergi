@@ -1,6 +1,21 @@
 @import "@styles/breakpoint.scss";
 
-.overlay {
-  padding: 20px;
-  width: 100%;
+section.bannerSection {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  max-width: 100%;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+}
+
+.bannerLoadingContainer {
+  position: relative;
+  padding-top: calc(256 / 686) * 100%;
+
+  @include media(tablet) {
+    padding-top: calc(427 / 1920) * 100%;
+  }
 }

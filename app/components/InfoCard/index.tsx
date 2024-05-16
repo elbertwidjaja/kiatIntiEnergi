@@ -5,13 +5,12 @@ import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface InfoCardProps {
-  name: ReactNode;
   logo: StaticImageData;
   image: StaticImageData;
   url: string;
 }
 
-function InfoCard({ name, image, logo, url }: InfoCardProps) {
+function InfoCard({ image, logo, url }: InfoCardProps) {
   return (
     <div className={styles.infoCard}>
       <Image
@@ -34,7 +33,6 @@ function InfoCard({ name, image, logo, url }: InfoCardProps) {
         }}
         loading="lazy"
       />
-      <span className={styles.brandName}>{name}</span>
       <Link href={url}>
         <Button colorScheme="blue">Lihat Produk</Button>
       </Link>

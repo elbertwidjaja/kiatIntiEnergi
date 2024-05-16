@@ -1,4 +1,5 @@
 import ArrowRight from "@/app/icons/ArrowRight";
+import Leaf from "@/app/icons/Leaf";
 
 export const SWH_DATA = [
   {
@@ -6,7 +7,7 @@ export const SWH_DATA = [
     title: "Penghematan Biaya Energi",
     description:
       "Mengurangi tagihan listrik dengan memanfaatkan energi matahari yang gratis dan melimpah.",
-    icon: <ArrowRight />,
+    icon: <Leaf />,
   },
   {
     id: 2,

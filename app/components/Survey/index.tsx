@@ -14,7 +14,7 @@ function Survey() {
         "Hemat",
         "Sehat",
         "Nyaman",
-        "Effisien",
+        "Efisien",
         "Sustainable",
         "Praktis",
         "Murni",

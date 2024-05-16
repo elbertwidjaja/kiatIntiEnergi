@@ -12,12 +12,13 @@ import visiSolar from "../public/Frame 35769.png";
 import styles from "./styles.module.scss";
 import Benefits from "./components/Benefits";
 import Survey from "./components/Survey";
+import BANNERS_HOME_DATA from "./Data/bannerhome";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      {/* <BannerHome /> */}
+      <BannerHome section={BANNERS_HOME_DATA} className={undefined} />
       <div className={styles.homeIntoductionContainer}>
         <span className={styles.welcome}>
           Selamat datang di Kiat Inti Energi
@@ -31,41 +32,25 @@ export default function Home() {
         </p>
       </div>
       <Benefits />
-      <p className={styles.brandKami}>Brand Kami</p>
-      <div className={styles.infoCardContainer}>
-        <InfoCard
-          name={
-            <h1>
-              SOLAR JAYA <br />
-              (DIRECT SYSTEM)
-            </h1>
-          }
-          logo={solarjayaLogo}
-          image={solarJaya}
-          url="/gallery/SolarJaya"
-        />
-        <InfoCard
-          name={
-            <h1>
-              VISI SOLAR <br />
-              (INDIRECT SYSTEM)
-            </h1>
-          }
-          logo={visiSolarLogo}
-          image={visiSolar}
-          url="/gallery/VisiSolar"
-        />
-        <InfoCard
-          name={
-            <h1>
-              JAVA FILTER
-              <br /> (PVC & FRP)
-            </h1>
-          }
-          image={javaFilter}
-          logo={javaFilterLogo}
-          url="/gallery/JavaFilter"
-        />
+      <div className={styles.ourProduct}>
+        <p className={styles.brandKami}>Brand Kami</p>
+        <div className={styles.infoCardContainer}>
+          <InfoCard
+            logo={solarjayaLogo}
+            image={solarJaya}
+            url="/gallery/SolarJaya"
+          />
+          <InfoCard
+            logo={visiSolarLogo}
+            image={visiSolar}
+            url="/gallery/VisiSolar"
+          />
+          <InfoCard
+            image={javaFilter}
+            logo={javaFilterLogo}
+            url="/gallery/JavaFilter"
+          />
+        </div>
       </div>
       <Survey />
       <Footer />

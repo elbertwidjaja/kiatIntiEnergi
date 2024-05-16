@@ -12,21 +12,21 @@ export const WF_DATA = [
     id: 2,
     title: "Ramah Lingkungan",
     description:
-      "Mengurangi jejak karbon dan emisi gas rumah kaca dengan menggunakan sumber energi terbarukan.",
+      "Memperbaiki rasa dan bau air dengan menghilangkan klorin dan senyawa organik lainnya.",
     icon: <ArrowRight />,
   },
   {
     id: 3,
     title: "Perawatan Minimal",
     description:
-      "Memiliki komponen yang tahan lama dan memerlukan sedikit perawatan dibandingkan sistem pemanas tradisional.",
+      "Mengurangi risiko penyakit yang disebabkan oleh air yang terkontaminasi, mendukung kesehatan secara keseluruhan.",
     icon: <ArrowRight />,
   },
   {
     id: 4,
     title: "Efisiensi Energi yang Lebih Tinggi",
     description:
-      "Pemanas air tenaga surya memiliki efisiensi yang lebih tinggi dalam mengubah energi alami menjadi panas, tanpa kerugian energi yang signifikan.",
+      "Mengurangi penumpukan kerak dan karat pada peralatan rumah tangga seperti pemanas air, mesin cuci, dan pipa, memperpanjang usia pakai peralatan tersebut.",
     icon: <ArrowRight />,
   },
 ];

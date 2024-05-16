@@ -5,7 +5,6 @@ import styles from "./styles.module.scss";
 function WF() {
   return (
     <div className={styles.wfContainer}>
-      <h1 className={styles.wf}>Water Filter</h1>
       <div className={styles.container}>
         <div className={styles.picture}>
           <img src="/path/to/your/image.jpg" alt="Solar Water Heater" />
