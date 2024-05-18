@@ -13,6 +13,7 @@ import styles from "./styles.module.scss";
 import Benefits from "./components/Benefits";
 import Survey from "./components/Survey";
 import BANNERS_HOME_DATA from "./Data/bannerhome";
+import ProductSlider from "./components/ProductSlider";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
         </div>
       </div>
       <Survey />
+      {/* <ProductSlider /> */}
       <Footer />
     </main>
   );

@@ -10,12 +10,3 @@ section.bannerSection {
     margin-top: 0px;
   }
 }
-
-.bannerLoadingContainer {
-  position: relative;
-  padding-top: calc(256 / 686) * 100%;
-
-  @include media(tablet) {
-    padding-top: calc(427 / 1920) * 100%;
-  }
-}

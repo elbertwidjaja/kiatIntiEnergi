@@ -7,13 +7,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
-  height: 90vh;
 }
 
 .image {
   width: 100vw;
-
+  height: 100%;
   // object-fit: cover;
 }
 
@@ -69,10 +67,11 @@
 }
 
 .bannerSwiperContainer {
-  padding-top: calc(256 / 686) * 100%;
+  padding-top: calc(580 / 375) * 100%;
 
   @include media(tablet) {
-    padding-top: calc(427 / 1920) * 100%;
+    // padding-top: calc(427 / 1920) * 100%;
+    padding-top: calc(625 / 1920) * 100%;
   }
 }
 

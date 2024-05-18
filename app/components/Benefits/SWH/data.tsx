@@ -1,5 +1,7 @@
 import ArrowRight from "@/app/icons/ArrowRight";
+import Hot from "@/app/icons/Hot";
 import Leaf from "@/app/icons/Leaf";
+import Wrench from "@/app/icons/Wrench";
 
 export const SWH_DATA = [
   {
@@ -14,20 +16,20 @@ export const SWH_DATA = [
     title: "Ramah Lingkungan",
     description:
       "Mengurangi jejak karbon dan emisi gas rumah kaca dengan menggunakan sumber energi terbarukan.",
-    icon: <ArrowRight />,
+    icon: <Leaf />,
   },
   {
     id: 3,
     title: "Perawatan Minimal",
     description:
       "Memiliki komponen yang tahan lama dan memerlukan sedikit perawatan dibandingkan sistem pemanas tradisional.",
-    icon: <ArrowRight />,
+    icon: <Wrench />,
   },
   {
     id: 4,
     title: "Efisiensi Energi yang Lebih Tinggi",
     description:
       "Pemanas air tenaga surya memiliki efisiensi yang lebih tinggi dalam mengubah energi alami menjadi panas, tanpa kerugian energi yang signifikan.",
-    icon: <ArrowRight />,
+    icon: <Hot />,
   },
 ];
