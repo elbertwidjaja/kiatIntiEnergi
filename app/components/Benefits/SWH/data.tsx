@@ -1,6 +1,7 @@
 import ArrowRight from "@/app/icons/ArrowRight";
 import Hot from "@/app/icons/Hot";
 import Leaf from "@/app/icons/Leaf";
+import Rupiah from "@/app/icons/Rupiah";
 import Wrench from "@/app/icons/Wrench";
 
 export const SWH_DATA = [
@@ -9,7 +10,7 @@ export const SWH_DATA = [
     title: "Penghematan Biaya Energi",
     description:
       "Mengurangi tagihan listrik dengan memanfaatkan energi matahari yang gratis dan melimpah.",
-    icon: <Leaf />,
+    icon: <Rupiah />,
   },
   {
     id: 2,

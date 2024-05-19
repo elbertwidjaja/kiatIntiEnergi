@@ -13,7 +13,6 @@ import styles from "./styles.module.scss";
 import Benefits from "./components/Benefits";
 import Survey from "./components/Survey";
 import BANNERS_HOME_DATA from "./Data/bannerhome";
-import ProductSlider from "./components/ProductSlider";
 
 export default function Home() {
   return (
@@ -38,16 +37,16 @@ export default function Home() {
         <div className={styles.infoCardContainer}>
           <InfoCard
             logo={solarjayaLogo}
-            image={solarJaya}
+            image="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fsolar_jaya_productMain.png?alt=media&token=03cb7d95-e93f-4b95-8ed9-3c287cc0b735"
             url="/gallery/SolarJaya"
           />
           <InfoCard
             logo={visiSolarLogo}
-            image={visiSolar}
+            image="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fvisi_solar_productMain.png?alt=media&token=a707fdc5-1ada-4f38-b072-4d274bf2c91f"
             url="/gallery/VisiSolar"
           />
           <InfoCard
-            image={javaFilter}
+            image="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fjava_filter_productMain.png?alt=media&token=51fbfddc-da1a-4712-bc0b-1563fec93e81"
             logo={javaFilterLogo}
             url="/gallery/JavaFilter"
           />

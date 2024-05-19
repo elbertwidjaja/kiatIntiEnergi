@@ -5,7 +5,7 @@ const BANNERS_HOME_DATA = [
     detail_path: "https://link",
     image_urls: {
       small:
-        "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Website%20Hero%20Mobile%20-%20375%20x%20575.png?alt=media&token=50c31037-b1fa-4f2e-a3d7-d1b970f1c6a1",
+        "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Website%20Hero%20Mobile%20-%20375%20x%20575%20final.png?alt=media&token=d5f85648-4c1b-4e74-8ba5-57738e5a8a74",
       large:
         "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Website%20Hero%20-%201920%20x%20620%20(Visi%20Solar).jpg?alt=media&token=b191eeba-56c1-4169-ad9b-58b1d5bdf543",
     },

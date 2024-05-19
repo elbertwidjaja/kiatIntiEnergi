@@ -1,72 +1,69 @@
 import React from "react";
-import picture from "@/public/Frame 35769.png";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import MainLayout from "../components/MainLayout";
 
+const sliderImageUrl = [
+  {
+    url: "https://i2.wp.com/www.geeksaresexy.net/wp-content/uploads/2020/04/movie1.jpg?resize=600%2C892&ssl=1",
+  },
+  {
+    url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-kids-movies-2020-call-of-the-wild-1579042974.jpg?crop=0.9760858955588091xw:1xh;center,top&resize=480:*",
+  },
+  {
+    url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-for-kids-2020-sonic-the-hedgehog-1571173983.jpg?crop=0.9871668311944719xw:1xh;center,top&resize=480:*",
+  },
+];
+
 function Profile() {
   return (
     <MainLayout>
-      <div className={styles.profilesContainer}>
-        <div className={styles.aboutUs}>
-          <h1>Tentang Kami</h1>
-          <p>
-            Kami, PT. Kiat Inti Energi, mitra terpercaya Anda dalam solusi
-            berbasis energi ramah lingkungan. Sebagai perusahaan yang
-            berdedikasi tinggi untuk menjalani visi masa depan yang
-            berkelanjutan, kami menawarkan rangkaian produk unggulan berupa
-            Solar Water Heater (Pemanas Air Tenaga Surya), Water Filter (Filter
-            Air) dan Reverse Osmosis (RO) untuk memenuhi kebutuhan air panas dan
-            air bersih di perumahan, komersial, hingga industri. Komitmen kami
-            juga melibatkan layanan purna jual yang profesional dan responsif
-            untuk memastikan kepuasan pelanggan.
-          </p>
+      <section className={styles.section}>
+        {/* <Image src={} alt="Poster" /> */}
+        <div className={styles.aboutUsContainer}>
+          <div>
+            <Image
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2FkiatIntiEnergi_Logo.png?alt=media&token=92f61f98-4005-4785-bff8-145a48f2ed93"
+              }
+              alt="Company Logo"
+              width={800}
+              height={800}
+              objectFit="cover"
+            />
+          </div>
+          <h1 className={styles.aboutUsDescription}>
+            berkomitmen untuk menjadi pelopor dalam teknologi pemanas air tenaga
+            surya dan penyaring air. Berbekal pengalaman puluhan tahun dan
+            dedikasi, kami sekarang telah melayani ribuan pelanggan yang puas di
+            seluruh Indonesia.
+          </h1>
         </div>
-        <div className={`${styles.goalContainer} ${styles.vision}`}>
-          <div className={styles.goalText}>
-            <h1>Visi Kami</h1>
-            <p>
-              Menjadi pemimpin solusi air bersih dan pemanas air berkelanjutan,
-              inovatif, dan berkualitas tinggi dalam bidang solar water heater,
-              water filter dan reverse osmosis.
-            </p>
-          </div>
-          <div className={styles.imageContainer}>
-            <Image src={picture} alt="picture" />
-          </div>
-        </div>
-        <div className={`${styles.goalContainer} ${styles.mission}`}>
-          <div className={styles.goalText}>
-            <h1>Misi Kami</h1>
-            <ul>
-              <li>
-                1. Menyediakan air panas melalui sumber energi terbarukan yang
-                ramah lingkungan
-              </li>
-              <li>
-                2. Meningkatkan kualitas air untuk mengatasi permasalahan
-                kualitas air di Indonesia
-              </li>
-              <li>
-                3. Memberikan layanan purna jual terbaik untuk memastikan
-                kenyamanan dan kepuasan pelanggan kami
-              </li>
-              <li>
-                4. Mendorong penggunaan sumber energi terbarukan untuk mendukung
-                gaya hidup berkelanjutan
-              </li>
-              <li>
-                5. Berkomitmen untuk terus berinovasi untuk menghasilkan produk
-                berkualitas tinggi
-              </li>
-            </ul>
-          </div>
-
-          <div className={styles.imageContainer}>
-            <Image src={picture} alt="picture" />
+        <div className={styles.goalContainer}>
+          <div className={styles.goalContent}>
+            <span className={styles.goal}>Visi dan Misi</span>
+            <h2 className={styles.mission}>
+              Misi kami adalah menyediakan solusi energi terbarukan dan
+              pemurnian air berkualitas tinggi yang berkontribusi pada
+              lingkungan yang lebih bersih dan kesehatan masyarakat yang lebih
+              baik. Kami berkomitmen untuk memberikan layanan terbaik dan
+              inovasi yang terus-menerus untuk memenuhi kebutuhan pelanggan
+              kami.
+            </h2>
+            <h2 className={styles.vision}>
+              Visi kami adalah menjadi perusahaan terkemuka di bidang energi
+              terbarukan dan pemurnian air di Indonesia, dengan fokus pada
+              keberlanjutan, teknologi mutakhir, dan kepuasan pelanggan. Kami
+              bercita-cita untuk menciptakan dunia di mana setiap orang memiliki
+              akses ke energi bersih dan air murni.
+            </h2>
           </div>
         </div>
-      </div>
+        <h2 className={styles.joinUs}>
+          BERGABUNGLAH DENGAN KAMI DALAM MENCIPTAKAN <br /> MASA DEPAN YANG
+          LEBIH HEMAT dan SEHAT
+        </h2>
+      </section>
     </MainLayout>
   );
 }

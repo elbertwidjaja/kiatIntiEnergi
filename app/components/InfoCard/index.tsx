@@ -6,7 +6,7 @@ import Link from "next/link";
 
 interface InfoCardProps {
   logo: StaticImageData;
-  image: StaticImageData;
+  image: string;
   url: string;
 }
 
@@ -24,14 +24,13 @@ function InfoCard({ image, logo, url }: InfoCardProps) {
           height: "auto",
         }}
       />
+
       <Image
         src={image}
         alt="product picture"
-        style={{
-          maxWidth: "100%",
-          height: "auto",
-        }}
         loading="lazy"
+        width={400}
+        height={400}
       />
       <Link href={url}>
         <Button colorScheme="blue">Lihat Produk</Button>

@@ -1,4 +1,7 @@
-import ArrowRight from "@/app/icons/ArrowRight";
+import Drinking from "@/app/icons/Drinking";
+import Health from "@/app/icons/Health";
+import House from "@/app/icons/House";
+import Water from "@/app/icons/Water";
 
 export const WF_DATA = [
   {
@@ -6,27 +9,27 @@ export const WF_DATA = [
     title: "Air Minum yang Aman",
     description:
       "Menghilangkan kontaminan seperti bakteri, virus, logam berat, dan bahan kimia, memastikan air minum yang aman dan sehat untuk keluarga Anda.",
-    icon: <ArrowRight />,
+    icon: <Drinking />,
   },
   {
     id: 2,
-    title: "Ramah Lingkungan",
+    title: "Meningkatkan Kualitas Air",
     description:
       "Memperbaiki rasa dan bau air dengan menghilangkan klorin dan senyawa organik lainnya.",
-    icon: <ArrowRight />,
+    icon: <Water />,
   },
   {
     id: 3,
-    title: "Perawatan Minimal",
+    title: "Kesehatan yang Lebih Baik",
     description:
       "Mengurangi risiko penyakit yang disebabkan oleh air yang terkontaminasi, mendukung kesehatan secara keseluruhan.",
-    icon: <ArrowRight />,
+    icon: <Health />,
   },
   {
     id: 4,
-    title: "Efisiensi Energi yang Lebih Tinggi",
+    title: "Perawatan Peralatan Rumah Tangga",
     description:
       "Mengurangi penumpukan kerak dan karat pada peralatan rumah tangga seperti pemanas air, mesin cuci, dan pipa, memperpanjang usia pakai peralatan tersebut.",
-    icon: <ArrowRight />,
+    icon: <House />,
   },
 ];
