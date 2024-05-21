@@ -33,9 +33,6 @@
   padding: 16px;
   max-width: 300px;
   padding: $space-4;
-  // background: #f5f5f5;
-  //   border-radius: 8px;
-  //   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .wfTitle {
@@ -47,15 +44,6 @@
 
 .wfDescription {
   font-weight: $medium;
-}
-
-.picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e5e5e5; /* Example background color for the picture area */
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example shadow for the picture area */
 }
 
 @include media(tablet) {

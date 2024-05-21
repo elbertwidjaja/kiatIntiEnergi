@@ -19,7 +19,14 @@ function Profile() {
   return (
     <MainLayout>
       <section className={styles.section}>
-        {/* <Image src={} alt="Poster" /> */}
+        <div className={styles.profilePoster}>
+          <Image
+            src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Profil%2FHero%20Tentang%20Kami.png?alt=media&token=c50400e6-9897-4865-a115-b25a9608b34f"
+            // src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Profil%2FHero%20Mobile%20Tentang%20Kami.png?alt=media&token=aa9690a0-b626-4d23-a9a5-66616743f7a0"
+            alt="Poster Tentang Kami"
+            fill
+          />
+        </div>
         <div className={styles.aboutUsContainer}>
           <div>
             <Image

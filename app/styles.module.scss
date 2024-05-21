@@ -49,6 +49,12 @@
   gap: $space-10;
 }
 
+.productSliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .infoCardContainer {
     flex-direction: column;

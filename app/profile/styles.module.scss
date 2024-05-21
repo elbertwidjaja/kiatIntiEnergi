@@ -3,6 +3,18 @@
 @import "@styles/spacing.scss";
 @import "@styles/breakpoint.scss";
 
+.profilePoster {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+@include media(mobile) {
+  .profilePoster {
+    height: 600px;
+  }
+}
+
 .aboutUsContainer {
   composes: constrain from global;
   display: flex;
