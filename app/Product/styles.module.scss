@@ -1,0 +1,53 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.productCard {
+  background-color: var(--bg);
+  border-radius: $space-5;
+  border: 1px solid var(--neutral-300);
+  max-width: 410px;
+  text-align: center;
+  padding: $space-4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCardContainer {
+  composes: constrain from global;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: $space-8;
+  margin-bottom: $space-10;
+
+  @include media(tablet) {
+    flex-direction: row;
+  }
+}
+
+.productCardName {
+  color: var(--main-bg);
+  font-weight: $semi-bold;
+  composes: lg2 from global;
+  margin-bottom: $space-3;
+}
+
+.productCardDescription {
+  color: var(--neutral-600);
+  font-weight: $light;
+  composes: md3 from global;
+  margin-bottom: $space-4;
+}
+
+.seeMore {
+  display: flex;
+  align-items: center;
+  color: var(--main-20);
+  font-weight: $regular;
+  composes: md3 from global;
+}

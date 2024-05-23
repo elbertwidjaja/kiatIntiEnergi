@@ -5,7 +5,7 @@ import ProductSlider from "./ProductSlider";
 function testing() {
   return (
     <>
-      <ProductSlider />
+      <ProductCard />
     </>
   );
 }
