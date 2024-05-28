@@ -34,12 +34,6 @@ const DATA = [
     imgUrl:
       "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/ProductSlider%2FJF%2010%20FRP%20Matic%20x2%20%3D%20Joglo%2C%20Jakarta%20Barat%20(31%20Aug%20_23).png?alt=media&token=22ed064f-e5f3-485f-8513-3e9a11dadd5d",
   },
-  //   {
-  //     id: 2,
-  //     name: "",
-  //     location: "",
-  //     imgUrl: "",
-  //   },
 ];
 
 const ProductSlider = () => {

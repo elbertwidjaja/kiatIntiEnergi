@@ -32,7 +32,7 @@ const WATERFILTER_DATA = [
       "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fjava_filter_productMain.png?alt=media&token=51fbfddc-da1a-4712-bc0b-1563fec93e81",
     company: "JAVA FILTER",
     description:
-      "JAVA FILTER FRP memiliki kekuatan dan ketahanan yang tinggi menjadikannya pilihan yang andal untuk menghilangkan kontaminan seperti zat besi, kapur, mangan dari air",
+      "JAVA FILTER FRP memiliki kekuatan dan ketahanan yang tinggi menjadikannya pilihan yang anda!",
   },
   {
     id: 3,

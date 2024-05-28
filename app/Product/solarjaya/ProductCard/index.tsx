@@ -9,13 +9,14 @@ type Product = {
   name: string;
   image: string;
   kapasitas: string;
-  dimensi: string;
   pemakaian: string;
+  dimensi: string;
   innerTank: string;
-  outerTank: string;
-  Insulasi: string;
-  StrukturRangka: string;
-  BackupHeater: string;
+  insulasi: string;
+  backupHeater: string;
+  kolektorPanel: string;
+  jumlahPanel: string;
+  materialBox: string;
   aksesoris: string;
 };
 
@@ -50,17 +51,18 @@ const ProductCard = ({ products }: ProductCardProps) => {
           <div className={styles.specsLayoutContainer}>
             <div className={styles.specs}>
               <p>{currentProduct.kapasitas}</p>
-              <p>{currentProduct.dimensi}</p>
               <p>{currentProduct.pemakaian}</p>
+              <p>{currentProduct.dimensi}</p>
             </div>
             <div className={styles.specs}>
               <p>{currentProduct.innerTank}</p>
-              <p>{currentProduct.outerTank}</p>
-              <p>{currentProduct.Insulasi}</p>
+              <p>{currentProduct.insulasi}</p>
+              <p>{currentProduct.backupHeater}</p>
             </div>
             <div className={styles.specs}>
-              <p>{currentProduct.StrukturRangka}</p>
-              <p>{currentProduct.BackupHeater}</p>
+              <p>{currentProduct.kolektorPanel}</p>
+              <p>{currentProduct.jumlahPanel}</p>
+              <p>{currentProduct.materialBox}</p>
             </div>
           </div>
           <p className={styles.specs}>{currentProduct.aksesoris}</p>

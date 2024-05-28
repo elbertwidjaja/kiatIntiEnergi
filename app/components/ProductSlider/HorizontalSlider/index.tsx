@@ -53,7 +53,7 @@ const HorizontalSlider = <ItemType,>({
         onClick={() => slide("left")}
         aria-label="previous"
       >
-        <ArrowLeft size="md" />
+        <ArrowLeft />
       </button>
       <button
         className={styles.nextButton}
@@ -61,7 +61,7 @@ const HorizontalSlider = <ItemType,>({
         onClick={() => slide("right")}
         aria-label="next"
       >
-        <ArrowRight size="md" />
+        <ArrowRight />
       </button>
     </div>
   );

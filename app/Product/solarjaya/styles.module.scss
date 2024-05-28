@@ -1,0 +1,85 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.fullWidthBg {
+  background-color: var(--bg);
+  width: 100%;
+  margin-bottom: 60px;
+  padding: $space-7;
+}
+
+.heroContainer {
+  composes: constrain from global;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: $space-12;
+
+  @include media(laptop) {
+    flex-direction: row;
+  }
+}
+
+.heroDescriptionContainer {
+  max-width: 600px;
+}
+
+.productMainTitle {
+  composes: lg2 from global;
+  color: var(--main-bg);
+  font-weight: $semi-bold;
+  margin-bottom: $space-3;
+}
+
+.prodcutSecondTitle {
+  composes: xl2 from global;
+  color: var(--main-bg);
+  font-weight: $bold;
+  margin-bottom: $space-5;
+}
+
+.productDescription {
+  color: var(--neutral-600);
+}
+
+.benefitsContainer {
+  composes: constrain from global;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0;
+  padding: 20px;
+  margin-bottom: $space-12;
+
+  @include media(tablet) {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  div {
+    flex: 1;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        list-style: disc inside;
+        padding-left: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.benefitList {
+  display: flex;
+  justify-content: baseline;
+
+  @include media(tablet) {
+    justify-content: center;
+  }
+}

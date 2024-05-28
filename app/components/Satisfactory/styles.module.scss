@@ -1,0 +1,52 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.satisfactoryContainer {
+  composes: constrain from global;
+  margin-bottom: $space-12;
+}
+
+.fitFor {
+  margin-bottom: $space-2;
+  text-align: center;
+  margin-bottom: $space-5;
+  composes: lg4 from global;
+  font-weight: $semi-bold;
+}
+
+.iconBenefitsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-12;
+  flex-wrap: wrap;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #e0f7fa;
+  border-radius: 50%;
+
+  & > svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.iconTitle {
+  margin-top: $space-1;
+  text-align: center;
+  font-size: 14px;
+}
