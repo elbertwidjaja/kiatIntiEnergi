@@ -8,13 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  padding: 20px;
+  width: 300px;
   text-align: center;
   gap: $space-10;
 
   @include media(mobile) {
-    width: 300px;
+    width: 400px;
   }
 }
 

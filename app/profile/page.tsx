@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import MainLayout from "../components/MainLayout";
+import ProductSlider from "../components/ProductSlider";
 
 const sliderImageUrl = [
   {
@@ -70,6 +71,9 @@ function Profile() {
           BERGABUNGLAH DENGAN KAMI DALAM MENCIPTAKAN <br /> MASA DEPAN YANG
           LEBIH HEMAT dan SEHAT
         </h2>
+        <div className={styles.productSliderContainer}>
+          <ProductSlider />
+        </div>
       </section>
     </MainLayout>
   );

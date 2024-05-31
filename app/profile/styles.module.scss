@@ -83,3 +83,9 @@
   height: 200px;
   margin-bottom: $space-12;
 }
+
+.productSliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

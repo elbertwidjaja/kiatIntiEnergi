@@ -11,6 +11,7 @@ type ProductCardData = {
   imgUrl: string;
   company: string;
   description: string;
+  url: string;
 };
 
 const { SOLARWATER_HEATER_DATA, WATERFILTER_DATA } = PRODUCT_CARD_DATA;
@@ -28,7 +29,7 @@ const renderItem = (item: ProductCardData): JSX.Element => {
       </div>
       <p className={styles.productCardName}>{item.company}</p>
       <p className={styles.productCardDescription}>{item.description}</p>
-      <Link href={"#"}>
+      <Link href={item.url}>
         <div className={styles.seeMore}>
           <p>See More</p>
           <ArrowRight color="#045ca6" />

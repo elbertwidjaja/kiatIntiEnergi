@@ -4,6 +4,7 @@ import MainLayout from "@/app/components/MainLayout";
 import Satisfactory from "@/app/components/Satisfactory/index";
 import ProductCard from "./ProductCard";
 import Image from "next/image";
+import ProductPageSlider from "./ProductPageSlider";
 
 const products = [
   {
@@ -105,6 +106,9 @@ function VisiSolar() {
           </div>
         </div>
         <ProductCard products={products} />
+        <div className={styles.productPageCenter}>
+          <ProductPageSlider />
+        </div>
       </MainLayout>
     </>
   );

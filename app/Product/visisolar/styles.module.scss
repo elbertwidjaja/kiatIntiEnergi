@@ -6,7 +6,6 @@
 .fullWidthBg {
   background-color: var(--bg);
   width: 100%;
-  //   height: 60vh;
   margin-bottom: 60px;
   padding: $space-7;
 }
@@ -83,4 +82,10 @@
   @include media(tablet) {
     justify-content: center;
   }
+}
+
+.productPageCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -45,10 +45,10 @@ const BannerSwiper = ({ data, autoScrollingTime = 5000 }) => {
     <div className={styles.swiperContainer}>
       <div className={styles.controllerContainer}>
         <button type="button" onClick={moveToPrevious} aria-label="previous">
-          <ArrowLeft size="lg" />
+          <ArrowLeft />
         </button>
         <button type="button" onClick={moveToNext} aria-label="next">
-          <ArrowRight size="lg" />
+          <ArrowRight />
         </button>
       </div>
       <ol className={styles.paginationContainer}>

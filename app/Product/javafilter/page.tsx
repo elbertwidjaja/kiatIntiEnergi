@@ -4,6 +4,7 @@ import MainLayout from "@/app/components/MainLayout";
 import Satisfactory from "@/app/components/Satisfactory/index";
 import ProductCard from "./ProductCard";
 import Image from "next/image";
+import Overcome from "@/app/components/Overcome";
 
 const products = [
   {
@@ -110,6 +111,7 @@ function JavaFilter() {
             </ul>
           </div>
         </div>
+        <Overcome />
         <ProductCard products={products} />
       </MainLayout>
     </>
