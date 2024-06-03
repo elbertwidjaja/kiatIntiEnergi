@@ -1,50 +1,12 @@
 @import "@styles/breakpoint.scss";
 
-.overlay {
-  position: relative;
-  margin-bottom: 38px;
-}
+section.bannerSection {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  max-width: 100%;
 
-.imageContainer {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.bannerText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 24px;
-  text-align: center;
-
-  .bannerTextSecondary {
-    color: blue;
-    line-height: 100%;
-  }
-
-  h1 {
-    color: red;
-    font-weight: 700;
-    font-size: 40px;
-
-    @include media(tablet) {
-      font-size: 60px;
-    }
-
-    @include media(laptop) {
-      font-size: 80px;
-    }
-
-    @include media(desktop) {
-      font-size: 100px;
-    }
-  }
-
-  span {
-    color: black;
-    font-weight: 700;
+  &:first-child {
+    margin-top: 0px;
   }
 }

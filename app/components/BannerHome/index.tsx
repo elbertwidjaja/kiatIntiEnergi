@@ -1,32 +1,25 @@
-import React from "react";
-import jumbotron from "../../../public/Website Homepage (Top).png";
+import BannerSwiper from "../BannerSlider";
 import styles from "./styles.module.scss";
-import Image from "next/image";
 
-function BannerHome() {
-  const targetHeight = Math.floor(Math.random() * 500) + 350;
+const BannerHome = ({ section, className }) => {
+  const renderBanner = () => {
+    return (
+      <BannerSwiper
+        data={section.map((content) => ({
+          id: content.id,
+          name: content.name,
+          image_urls: content.image_urls,
+          detail_path: content.detail_path,
+        }))}
+      />
+    );
+  };
 
   return (
-    <div className={styles.overlay}>
-      <div
-        className={styles.imageContainer}
-        style={{ height: `${targetHeight}px` }}
-      >
-        <Image
-          src={jumbotron}
-          alt="Banner"
-          layout="fill"
-          objectFit="cover"
-          loading="lazy"
-        />
-      </div>
-      <div className={styles.bannerText}>
-        <h1>Temukan Solusi Air</h1>
-        <h1 className={styles.bannerTextSecondary}>Panas & Air Bersih</h1>
-        <span>Cocok untuk kebutuhan rumah, komersial, industri</span>
-      </div>
-    </div>
+    <section className={[styles.bannerSection, className].join(" ")}>
+      {renderBanner()}
+    </section>
   );
-}
+};
 
 export default BannerHome;

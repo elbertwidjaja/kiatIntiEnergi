@@ -1,0 +1,38 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.overcomeContaier {
+  composes: constrain from global;
+}
+
+.backgroundOvercome {
+  background: var(--bg);
+  padding: $space-10;
+  margin-bottom: $space-14;
+}
+
+.effective {
+  text-align: center;
+  margin-bottom: $space-6;
+  composes: xl1 from global;
+  color: var(--main-bg);
+  font-weight: $semi-bold;
+}
+
+.overcomeCardContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: $space-5;
+  flex-wrap: wrap;
+}
+
+.overcomeCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 200px;
+}

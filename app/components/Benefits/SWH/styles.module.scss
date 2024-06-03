@@ -1,0 +1,64 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.swhContainer {
+  composes: constrain from global;
+  margin-bottom: $space-12;
+}
+
+.swh {
+  color: var(--main-bg);
+  text-align: center;
+  composes: xl1 from global;
+  font-weight: $semi-bold;
+  margin-bottom: $space-5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.picture {
+  order: -1;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.gridItem {
+  padding: 16px;
+  max-width: 300px;
+  padding: $space-4;
+}
+
+.swhTitle {
+  color: var(--main-10);
+  composes: md4 from global;
+  font-weight: $semi-bold;
+  margin-bottom: $space-2;
+}
+
+.swhDescription {
+  font-weight: $medium;
+}
+
+@include media(tablet) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .picture {
+    order: 0;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

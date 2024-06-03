@@ -1,24 +1,39 @@
-.descriptionContainer {
+@import "./styles/layout.module.scss";
+@import "./styles/theme.scss";
+@import "./styles/spacing.scss";
+@import "./styles/typography.scss";
+
+.homeIntoductionContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 40vh;
   text-align: center;
-  gap: 48px;
-  background-image: url(../public/greenEnergy.png);
-  background-position: center;
-  background-size: cover;
-  height: 550px;
-  color: white;
-  margin-bottom: 32px;
+  background-color: var(--bg);
+  margin-bottom: $space-12;
+}
 
-  h1 {
-    font-size: 58px;
-  }
+.welcome {
+  color: var(--main-bg);
+  composes: xl4 from global;
+  font-weight: $bold;
+}
 
-  p {
-    font-size: 24px;
-  }
+.homeIntroduction {
+  composes: lg1 from global;
+  font-weight: $regular;
+  padding-right: $space-8;
+  padding-left: $space-8;
+}
+
+.ourProduct {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg);
+  margin-bottom: $space-12;
+  padding: $space-6;
 }
 
 .brandKami {
@@ -31,7 +46,13 @@
 .infoCardContainer {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: $space-10;
+}
+
+.productSliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -39,6 +60,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .descriptionContainer {
     padding: 8px;
     h1 {

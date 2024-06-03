@@ -1,0 +1,85 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $space-8;
+  composes: constrain from global;
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: $space-12;
+
+  @include media(laptop) {
+    flex-direction: row;
+  }
+}
+
+.productCardButtons {
+  display: flex;
+  margin-bottom: $space-8;
+  gap: $space-5;
+  flex-wrap: wrap;
+
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+.productCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media(tablet) {
+    flex-direction: column;
+  }
+}
+
+.productCardImage {
+  width: 500px;
+  margin-right: 16px;
+}
+
+.productCardSpecs {
+  font-size: 14px;
+  color: #333;
+}
+
+.productName {
+  composes: lg3 from global;
+  color: var(--main-bg);
+  font-weight: $bold;
+  margin-bottom: $space-8;
+}
+
+.specsLayoutContainer {
+  display: flex;
+  gap: 30px;
+  margin-bottom: $space-6;
+}
+
+.specs {
+  composes: md3 from global;
+  color: var(--neutral-500);
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}

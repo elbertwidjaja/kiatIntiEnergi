@@ -1,11 +1,11 @@
-$bp-mobile: "min-width: 320";
+$bp-mobile: "min-width: 330";
 $bp-tablet: "min-width: 768";
 $bp-laptop: "min-width: 1152";
 $bp-desktop: "min-width: 1440";
 
 @mixin media($breakpoint) {
   @if $breakpoint == mobile {
-    @media (min-width: 320px) {
+    @media (min-width: 330px) {
       @content;
     }
   }
