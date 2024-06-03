@@ -6,7 +6,7 @@ const OVERCOME_DATA = [
   {
     id: 0,
     title: "Air Bau & Keruh",
-    description: "Air Berwarna Kuning",
+    description: "Air yang berbau tidak sedap dan kotor",
     icon: <Smelly />,
   },
   {

@@ -27,6 +27,7 @@ const renderItem = (item: ProductCardData): JSX.Element => {
           alt="Product Card Picture"
         />
       </div>
+
       <p className={styles.productCardName}>{item.company}</p>
       <p className={styles.productCardDescription}>{item.description}</p>
       <Link href={item.url}>
@@ -42,7 +43,16 @@ const renderItem = (item: ProductCardData): JSX.Element => {
 function ProductPage() {
   return (
     <MainLayout>
-      <div>ProductPageHeader</div>
+      <div className={styles.heroSection}>
+        <Image
+          src={
+            "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2FHero%20Produk%20Kami.png?alt=media&token=9be92584-78ed-446f-8998-ad50af9162a5"
+          }
+          width={1920}
+          height={620}
+          alt="Hero Picture"
+        />
+      </div>
       <div className={styles.productCardContainer}>
         {SOLARWATER_HEATER_DATA.map(renderItem)}
       </div>

@@ -3,6 +3,10 @@
 @import "@styles/layout.module.scss";
 @import "@styles/breakpoint.scss";
 
+.heroSection {
+  margin-bottom: $space-12;
+}
+
 .productCard {
   background-color: var(--bg);
   border-radius: $space-5;
