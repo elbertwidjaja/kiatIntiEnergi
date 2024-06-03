@@ -178,7 +178,7 @@ const Swiper = forwardRef<any, SwiperPropsType>(
 
     useEffect(() => {
       if (trackRef.current && onReady) onReady();
-    }, [trackRef]);
+    }, [onReady, trackRef]);
 
     const swiperWidth =
       slidesPerView === "auto" || !sliderRef.current
