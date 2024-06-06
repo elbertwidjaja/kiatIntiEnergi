@@ -5,7 +5,7 @@ import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface InfoCardProps {
-  logo: StaticImageData;
+  logo: string;
   image: string;
   url: string;
 }

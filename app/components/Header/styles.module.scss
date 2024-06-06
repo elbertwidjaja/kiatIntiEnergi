@@ -1,5 +1,6 @@
 @import "../../styles/typography.scss";
 @import "../../styles/theme.scss";
+@import "../../styles/spacing.scss";
 
 .topnav {
   background-color: white;
@@ -8,7 +9,7 @@
   width: 100%;
   top: 0;
   z-index: 40;
-  height: 4rem;
+  height: 100px;
 
   a {
     float: left;
@@ -20,7 +21,6 @@
     font-size: 17px;
 
     &.active {
-      background-color: #04aa6d;
       color: red;
     }
   }
@@ -68,10 +68,6 @@
         }
       }
     }
-  }
-
-  .icon {
-    display: none;
   }
 
   .dropdown {
@@ -170,10 +166,6 @@
           z-index: -100;
           background-color: var(--white);
         }
-
-        // .nav{
-        //   display: none;
-        // }
       }
     }
   }
