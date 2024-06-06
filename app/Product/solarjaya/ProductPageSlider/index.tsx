@@ -16,7 +16,7 @@ const data = [
   {
     id: 2,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_SolarJaya%2FPrinsip%20Thermosiphon.jpg?alt=media&token=8ed60c7c-a3e7-4285-9a92-a5d2d6671fd5",
+      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Frame%2035778.png?alt=media&token=41d06a2e-9a34-493c-a414-6947ea7bb213",
     description:
       "Prinsip thermosiphon pada solar water heater bekerja dengan aliran alami air karena perbedaan suhu. Saat air dalam kolektor surya dipanaskan oleh sinar matahari, air panas naik ke atas ke tangki penyimpanan, sementara air dingin dari tangki turun ke kolektor untuk dipanaskan lagi. Proses ini terjadi tanpa memerlukan pompa atau listrik, membuat sistem lebih sederhana dan hemat energi.",
   },

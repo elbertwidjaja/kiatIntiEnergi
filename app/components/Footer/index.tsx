@@ -88,7 +88,12 @@ const Footer = () => (
         </section>
       </div>
       <div className={styles.rightContainer}>
-        <Image src={logo} alt="" className={styles.logo} />
+        {/* <Image
+          src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2Fkiatintienergi_logo.png?alt=media&token=db0737db-d932-414e-b3d1-40a1a17d8dee"
+          alt="Kiat inti energi Logo"
+          width={250}
+          height={250}
+        /> */}
       </div>
     </div>
 

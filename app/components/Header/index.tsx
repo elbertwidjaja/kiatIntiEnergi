@@ -2,14 +2,10 @@
 
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 const Header = () => {
-  const [isResponsive, setIsResponsive] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
-
-  const toggleResponsive = () => {
-    setIsResponsive(!isResponsive);
-  };
 
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
@@ -40,7 +36,14 @@ const Header = () => {
     <div className={styles.topnav} id="myTopnav">
       <header className={styles.header}>
         <div className={styles.leftHeader}>
-          <a href="/">Inti Kiat Energi</a>
+          <a href="/">
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2Fkiatintienergi_logo.png?alt=media&token=db0737db-d932-414e-b3d1-40a1a17d8dee"
+              alt="Kiat inti energi Logo"
+              width={300}
+              height={300}
+            />
+          </a>
         </div>
 
         <div className={styles.rightHeader}>

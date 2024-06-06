@@ -9,28 +9,28 @@ const data = [
   {
     id: 1,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FTeknologi%20Vacuum%20Tube.png?alt=media&token=7af198ab-5c72-4e4d-bedc-a15138ff49a6",
+      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FTeknologi%20Vacuum%20Tube.png?alt=media&token=abe3583f-2e54-4878-acfe-4fbe93a4f625",
     description:
       "Vacuum Tube adalah kolektor penyerap panas energi matahari yang efisien dan efektif dalam segala kondisi cuaca, bahkan saat mendung. Prinsip kerjanya sederhana dan mirip dengan termos, terdiri dari dua lapisan kaca dengan ruang hampa di antaranya untuk meminimalkan kehilangan panas. Lapisan luar.",
   },
   {
     id: 2,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FSistem%20Kerja%20Indirect.jpeg?alt=media&token=022e5ec2-1e05-4cc4-9771-b752b9116551",
+      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FSistem%20Kerja%20Indirect%201.png?alt=media&token=405d2777-09be-4c19-99e4-b077bd1acde7",
     description:
       "VISI SOLAR menggunakan Indirect Pressurized System (bertekanan), di mana air dalam tangki dan vacuum tube dipanaskan langsung oleh matahari yang bisa mencapai hingga 90°C. Air panas ini kemudian memanaskan air dalam pipa spiral tembaga melalui proses perpindahan panas (Heat Transfer). Air dalam pipa tembaga kemudian didistribusikan ke saluran outlet.",
   },
   {
     id: 3,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FPenerimaan%20Sinar%20Matahari.jpg?alt=media&token=17157bab-2296-4ffd-a1c7-21d63fb94181",
+      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FPenerimaan%20Sinar%20Matahari%201.png?alt=media&token=acbbca63-1a5c-4c4d-8e0f-c0a0c7f25b19",
     description:
       "Dengan bentuk vacuum tube yang bulat dan melingkar, permukaan untuk menyerap energi panas matahari bisa dari berbagai sisi. Jadi, posisi matahari di pagi, siang dan sore hari, area penyerapan panas akan tetap efektif.",
   },
   {
     id: 4,
     image:
-      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FHeat%20Exchanger.jpg?alt=media&token=5fa124a3-a12b-4167-a835-ee3d0fe4f1ce",
+      "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FHeat%20Exchanger.jpg?alt=media&token=c7710bc4-8306-44c1-b894-0029e1b74b4d",
     description:
       "VISI SOLAR menggunakan Copper Spiral Coil (Pipa Spiral Tembaga) sebagai Heat Exchanger yang bisa ditemukan di dalam tangki penyimpan air panas.",
   },

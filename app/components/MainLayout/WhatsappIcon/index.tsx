@@ -5,7 +5,7 @@ import styles from "./styles.module.scss";
 function WhatsappIcon() {
   return (
     <a
-      href="https://wa.me/081260798000"
+      href="https://wa.me/081283831787"
       className={styles.whatsappFloat}
       target="_blank"
       rel="noopener noreferrer"

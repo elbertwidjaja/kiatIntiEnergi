@@ -114,6 +114,9 @@ function VisiSolar() {
           </div>
         </div>
         <hr />
+        <div className={styles.productPageCenter}>
+          <ProductPageSlider />
+        </div>
         <Satisfactory />
         <div className={styles.benefitsContainer}>
           <div className={styles.benefitList}>
@@ -134,9 +137,6 @@ function VisiSolar() {
           </div>
         </div>
         <ProductCard products={products} />
-        <div className={styles.productPageCenter}>
-          <ProductPageSlider />
-        </div>
       </MainLayout>
     </>
   );
