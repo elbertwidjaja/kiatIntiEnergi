@@ -5,6 +5,7 @@ import Satisfactory from "@/app/components/Satisfactory/index";
 import ProductCard from "./ProductCard";
 import Image from "next/image";
 import ProductPageSlider from "./ProductPageSlider";
+import PictureGrid from "./PictureGrid";
 
 const products = [
   {
@@ -109,6 +110,7 @@ function VisiSolar() {
           </div>
         </div>
         <ProductCard products={products} />
+        <PictureGrid />
       </MainLayout>
     </>
   );

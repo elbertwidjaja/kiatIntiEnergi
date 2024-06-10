@@ -38,10 +38,10 @@ const Header = () => {
         <div className={styles.leftHeader}>
           <a href="/">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2Fkiatintienergi_logo.png?alt=media&token=db0737db-d932-414e-b3d1-40a1a17d8dee"
+              src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2FkiatIntiEnergi_Logo.png?alt=media&token=92f61f98-4005-4785-bff8-145a48f2ed93"
               alt="Kiat inti energi Logo"
-              width={300}
-              height={300}
+              width={200}
+              height={90}
             />
           </a>
         </div>
