@@ -39,7 +39,7 @@ const Footer = () => (
         <section className={styles.sectionContainer}>
           <h2 className={styles.titleText}>Social Media</h2>
           <a
-            href="https://twitter.com"
+            href="https://linktr.ee/kienergi_instagram"
             className={styles.labelText}
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const Footer = () => (
             Instagram
           </a>
           <a
-            href="https://instagram.com"
+            href="https://linktr.ee/kienergi_facebook"
             className={styles.labelText}
             target="_blank"
             rel="noopener noreferrer"
@@ -55,20 +55,12 @@ const Footer = () => (
             Facebook
           </a>
           <a
-            href="https://instagram.com"
+            href="https://linktr.ee/kienergi_tiktok"
             className={styles.labelText}
             target="_blank"
             rel="noopener noreferrer"
           >
             Tiktok
-          </a>
-          <a
-            href="https://instagram.com"
-            className={styles.labelText}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Youtube
           </a>
 
           <h2 className={`${styles.titleText} ${styles.marginTop}`}>

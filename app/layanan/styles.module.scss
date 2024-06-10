@@ -1,0 +1,6 @@
+.surveyContainer {
+  composes: constrain from global;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
