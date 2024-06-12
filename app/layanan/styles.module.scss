@@ -1,6 +1,55 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.heroSection {
+  margin-bottom: $space-14;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+@include media(tablet) {
+  .heroSection {
+    height: 600px;
+  }
+}
+
+.title {
+  text-align: center;
+  composes: xl2 from global;
+  font-weight: $bold;
+  margin-bottom: $space-4;
+  color: var(--main-bg);
+}
+
 .surveyContainer {
   composes: constrain from global;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: $space-10;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $space-10;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-10;
+
+    @include media(mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.gridItem {
+  width: 100%;
+  text-align: center;
 }

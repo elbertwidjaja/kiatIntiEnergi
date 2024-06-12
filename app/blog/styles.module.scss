@@ -1,0 +1,62 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.heroSection {
+  margin-bottom: $space-14;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+@include media(tablet) {
+  .heroSection {
+    height: 600px;
+  }
+}
+
+.showCase {
+  text-align: center;
+  margin-bottom: $space-10;
+  composes: xl2 from global;
+  font-weight: $bold;
+  color: var(--main-bg);
+}
+
+.blogCard {
+  composes: constrain from global;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: $space-8;
+  border-radius: $space-2;
+  margin-bottom: $space-10;
+}
+
+.blogTitle {
+  color: var(--main-bg);
+  font-weight: $semi-bold;
+  composes: lg2 from global;
+}
+
+.blogDate {
+  color: var(--secondary-bg);
+  font-weight: $bold;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+  margin: $space-10 0;
+
+  @include media(mobile) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridItem {
+  width: 100%;
+  text-align: center;
+}
