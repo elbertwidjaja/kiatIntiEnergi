@@ -9,7 +9,7 @@
   height: 200px;
 }
 
-@include media(mobile) {
+@include media(tablet) {
   .profilePoster {
     height: 600px;
   }

@@ -73,8 +73,8 @@ const Header = () => {
                   <a href="/javafilter">Java Filter</a>
                 </div>
               </div> */}
-              <a href="#">Layanan</a>
-              <a href="#">Blog</a>
+              <a href="/layanan">Layanan</a>
+              <a href="/blog">Blog</a>
               <a href="#">Hubungi Kami</a>
             </div>
           </div>
