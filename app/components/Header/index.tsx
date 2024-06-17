@@ -75,7 +75,7 @@ const Header = () => {
               </div> */}
               <a href="/layanan">Layanan</a>
               <a href="/blog">Blog</a>
-              <a href="#">Hubungi Kami</a>
+              <a href="/hubungikami">Hubungi Kami</a>
             </div>
           </div>
         </div>

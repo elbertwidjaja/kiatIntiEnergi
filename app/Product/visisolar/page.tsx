@@ -93,7 +93,7 @@ function VisiSolar() {
           <div className={styles.heroContainer}>
             <Image
               alt="Visi Solar Product"
-              src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_VisiSolar%2FVisiSolar_Header.png?alt=media&token=95d1d243-1a97-4563-9662-ed613250fca7"
+              src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fvisi_solar_productMain.png?alt=media&token=a707fdc5-1ada-4f38-b072-4d274bf2c91f"
               width={500}
               height={500}
             />

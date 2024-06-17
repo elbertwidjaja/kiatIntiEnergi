@@ -1,0 +1,55 @@
+@import "@styles/typography.scss";
+@import "@styles/spacing.scss";
+@import "@styles/layout.module.scss";
+@import "@styles/breakpoint.scss";
+
+.heroSection {
+  margin-bottom: $space-14;
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+@include media(tablet) {
+  .heroSection {
+    height: 600px;
+  }
+}
+
+.help {
+  composes: lg1 from global;
+  font-weight: $semi-bold;
+  color: var(--main-bg);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: $space-12;
+}
+
+.form {
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mapContainer {
+  composes: constrain from global;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $space-12;
+}
+
+.findUs {
+  composes: xl1 from global;
+  font-weight: $bold;
+  margin-right: $space-8;
+}
