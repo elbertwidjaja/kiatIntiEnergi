@@ -31,17 +31,17 @@ function Home() {
             <InfoCard
               logo="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2FLOGO%20SOLARJAYA.png?alt=media&token=abfdc398-b254-497a-a2df-9288546ccadf"
               image="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fsolar_jaya_productMain.png?alt=media&token=03cb7d95-e93f-4b95-8ed9-3c287cc0b735"
-              url="/gallery/SolarJaya"
+              url="/Product/solarjaya"
             />
             <InfoCard
               logo="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2Flogo%20visi%20solar.png?alt=media&token=14258829-c8ca-4518-a818-cc95ec5dd859"
               image="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fvisi_solar_productMain.png?alt=media&token=a707fdc5-1ada-4f38-b072-4d274bf2c91f"
-              url="/gallery/VisiSolar"
+              url="/Product/visisolar"
             />
             <InfoCard
               image="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2Fjava_filter_productMain.png?alt=media&token=51fbfddc-da1a-4712-bc0b-1563fec93e81"
               logo="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2FLOGO%20JAVA%20FILTER.png?alt=media&token=7049c40c-e90d-4a50-8464-ff31d6d7eb5e"
-              url="/gallery/JavaFilter"
+              url="/Product/javafilter"
             />
           </div>
         </div>

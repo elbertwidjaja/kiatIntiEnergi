@@ -12,6 +12,7 @@ const data = [
       "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_SolarJaya%2FCara%20Kerja%20Sistem%20Direct.png?alt=media&token=f2bd785c-06ab-4568-ab62-c12306aaf377",
     description:
       "SOLARJAYA menggunakan sistem direct di mana air langsung dipanaskan oleh sinar matahari tanpa menggunakan perantara seperti heat exchanger. Dalam sistem ini, air dingin dialirkan langsung ke dalam tangki pemanas yang terpapar sinar matahari, dan kemudian dipanaskan sebelum didistribusikan ke saluran air panas.",
+    title: "Cara Kerja Sistem Direct",
   },
   {
     id: 2,
@@ -19,12 +20,14 @@ const data = [
       "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Frame%2035778.png?alt=media&token=41d06a2e-9a34-493c-a414-6947ea7bb213",
     description:
       "Prinsip thermosiphon pada solar water heater bekerja dengan aliran alami air karena perbedaan suhu. Saat air dalam kolektor surya dipanaskan oleh sinar matahari, air panas naik ke atas ke tangki penyimpanan, sementara air dingin dari tangki turun ke kolektor untuk dipanaskan lagi. Proses ini terjadi tanpa memerlukan pompa atau listrik, membuat sistem lebih sederhana dan hemat energi.",
+    title: "Prinsip Thermosiphon",
   },
   {
     id: 3,
     image:
       "https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Product_SolarJaya%2FGaransi%207%20Tahun.png?alt=media&token=76dd6147-96c5-4279-a80a-7c1a3af2e249",
     description: "SOLARJAYA bergaransi hingga 7 tahun untuk tangki dan panel.",
+    title: "Garansi 7 Tahun",
   },
 ];
 
@@ -41,6 +44,7 @@ function ProductPageSlider() {
           />
         </div>
         <div className={styles.productDescription}>
+          <p className={styles.title}>{item.title}</p>
           <p>{item.description}</p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 @import "@styles/layout.module.scss";
 @import "@styles/breakpoint.scss";
 @import "@styles/spacing.scss";
+@import "@styles/typography.scss";
 
 .productSliderContainer {
   max-width: 300px;
@@ -32,4 +33,11 @@
 
 .productDescription {
   max-width: 350px;
+}
+
+.title {
+  color: var(--main-bg);
+  font-weight: $bold;
+  composes: md4 from global;
+  margin-bottom: $space-2;
 }
