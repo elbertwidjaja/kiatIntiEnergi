@@ -64,12 +64,12 @@ function SurveyCard() {
           <Text>
             Kami menawarkan layanan perawatan dan perbaikan solar water heater,
             termasuk pemeriksaan rutin, pembersihan, dan perbaikan, memastikan
-            sistem Anda berfungsi optimal..
+            sistem Anda berfungsi optimal.
           </Text>
         </CardBody>
         <CardFooter>
           <a href="https://wa.me/6281283831787">
-            <Button>Jadwalkan Survei Sekarang!</Button>
+            <Button>Jadwalkan Service Sekarang!</Button>
           </a>
         </CardFooter>
       </Card>
@@ -86,12 +86,12 @@ function SurveyCard() {
           <Text>
             Kami menyediakan layanan perawatan dan perbaikan water filter,
             termasuk pemeriksaan rutin, pembersihan, penggantian media, dan
-            perbaikan untuk memastikan air Anda selalu bersih dan aman. .
+            perbaikan untuk memastikan air Anda selalu bersih dan aman.
           </Text>
         </CardBody>
         <CardFooter>
           <a href="https://wa.me/6281283831787">
-            <Button>Jadwalkan Survei Sekarang!</Button>
+            <Button>Jadwalkan Service Sekarang!</Button>
           </a>
         </CardFooter>
       </Card>
