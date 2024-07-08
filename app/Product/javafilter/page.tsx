@@ -5,6 +5,7 @@ import Satisfactory from "@/app/components/Satisfactory/index";
 import ProductCard from "./ProductCard";
 import Image from "next/image";
 import Overcome from "@/app/components/Overcome";
+import Downloadpdf from "@/app/components/Downloadpdf";
 
 const products = [
   {
@@ -92,6 +93,9 @@ function JavaFilter() {
                 rumah tangga dan industri. FRP adalah Fiberglass Reinforced
                 Plastic (FRP) yang dikenal mempunyai kekuatan, dan daya tahan
               </p>
+              <div className={styles.buttonFlagContainer}>
+                <Downloadpdf url="JavaFilter-Catalogue.pdf" />
+              </div>
             </div>
           </div>
         </div>

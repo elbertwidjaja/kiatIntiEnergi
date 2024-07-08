@@ -5,6 +5,7 @@ import Satisfactory from "@/app/components/Satisfactory/index";
 import ProductCard from "./ProductCard";
 import Image from "next/image";
 import Overcome from "@/app/components/Overcome";
+import Downloadpdf from "@/app/components/Downloadpdf";
 
 const products = [
   {
@@ -75,6 +76,9 @@ function JavaFilter() {
                 menawarkan penyaringan yang sangat efektif dan mudah
                 perawatannya berkat tutup tangki sistem baut.
               </p>
+              <div className={styles.buttonFlagContainer}>
+                <Downloadpdf url="JavaFilter-Catalogue.pdf" />
+              </div>
             </div>
           </div>
         </div>

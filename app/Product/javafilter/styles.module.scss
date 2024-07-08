@@ -6,7 +6,6 @@
 .fullWidthBg {
   background-color: var(--bg);
   width: 100%;
-  //   height: 60vh;
   margin-bottom: 60px;
   padding: $space-7;
 }
@@ -44,6 +43,10 @@
 
 .productDescription {
   color: var(--neutral-600);
+}
+
+.buttonFlagContainer {
+  margin-top: $space-6;
 }
 
 .benefitsContainer {

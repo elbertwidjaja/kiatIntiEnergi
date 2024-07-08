@@ -6,6 +6,7 @@ import ProductCard from "@/app/components/ProductCard";
 import Image from "next/image";
 import ProductPageSlider from "./ProductPageSlider";
 import PictureGrid from "./PictureGrid";
+import Downloadpdf from "@/app/components/Downloadpdf";
 
 const products = [
   {
@@ -111,6 +112,18 @@ function VisiSolar() {
                 stainless steel 304, desain modern, dan standar kualitas Jerman,
                 serta garansi 5 tahun.
               </p>
+              <div className={styles.buttonFlagContainer}>
+                <Downloadpdf url="VisiSolar-Catalogue.pdf" />
+                <div className={styles.flagContainer}>
+                  <Image
+                    width={100}
+                    height={100}
+                    alt="Germany Flag"
+                    src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2F27101.jpg?alt=media&token=1e6f14a1-dde7-4f20-81e4-311c5e80ebf8"
+                  />
+                  <p className={styles.germanStandard}>German Standard</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
