@@ -7,7 +7,7 @@ import styles from "./styles.module.scss";
 function Downloadpdf({ url }) {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = url;
+    link.href = `/${url}`;
     link.download = url;
     link.click();
   };
