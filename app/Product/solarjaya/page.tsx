@@ -6,6 +6,7 @@ import ProductCard from "./ProductCard";
 import Image from "next/image";
 import ProductPageSlider from "./ProductPageSlider";
 import PictureGrid from "./PictureGrid";
+import Downloadpdf from "@/app/components/Downloadpdf";
 
 const products = [
   {
@@ -85,6 +86,20 @@ function VisiSolar() {
                 yang tinggi, menggunakan inner tank anti karat dari stainless
                 steel 316 yang kokoh, dan dilengkapi garansi hingga 7 tahun.
               </p>
+              <div className={styles.buttonFlagContainer}>
+                <Downloadpdf url="SolarJaya-Catalogue.pdf" />
+                <div className={styles.flagContainer}>
+                  <Image
+                    width={100}
+                    height={100}
+                    alt="Australia Flag"
+                    src="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Logo%2FAus_Flag.jpg?alt=media&token=008d0d6d-5e07-4360-b5a2-28d073661c5a"
+                  />
+                  <p className={styles.australianStandard}>
+                    Australian Standard
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -45,6 +45,37 @@
   color: var(--neutral-600);
 }
 
+.buttonFlagContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $space-6;
+  flex-direction: column;
+
+  @include media(laptop) {
+    flex-direction: row;
+  }
+}
+
+.flagContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $space-5;
+
+  @include media(laptop) {
+    margin-top: 0;
+  }
+}
+
+.australianStandard {
+  margin-top: $space-2;
+  padding: $space-2 $space-4;
+  background-color: var(--main-bg);
+  color: #ffffff;
+  border-radius: $space-5;
+  composes: md3 from global;
+}
+
 .benefitsContainer {
   composes: constrain from global;
   display: flex;
