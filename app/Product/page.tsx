@@ -5,6 +5,7 @@ import styles from "./styles.module.scss";
 import ArrowRight from "../icons/ArrowRight";
 import MainLayout from "../components/MainLayout";
 import Link from "next/link";
+import Head from "next/head";
 
 type ProductCardData = {
   id: number;
@@ -43,6 +44,34 @@ const renderItem = (item: ProductCardData): JSX.Element => {
 function ProductPage() {
   return (
     <MainLayout>
+      <Head>
+        <title>
+          Solar Water Heater, Solar Panel, Water Filter, Reverse Osmosis
+        </title>
+        <meta
+          name="description"
+          content="Discover high-quality solar water heaters, solar panels, water filters, and reverse osmosis systems at Kiat Inti Energi."
+        />
+        <meta
+          name="keywords"
+          content="Solar Water Heater, Solar Panel, Water Filter, Reverse Osmosis, "
+        />
+        <meta
+          property="og:title"
+          content="Solar Water Heater, Solar Panel, Water Filter, Reverse Osmosis"
+        />
+        <meta
+          property="og:description"
+          content="Discover high-quality solar water heaters, solar panels, water filters, and reverse osmosis systems at Kiat Inti Energi."
+        />
+        <meta property="og:url" content="https://kiatintienergi.com/Product" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/bun-homeserver.appspot.com/o/Brand%20Kami%2FHero%20Produk%20Kami.png?alt=media&token=9be92584-78ed-446f-8998-ad50af9162a5"
+        />
+        <link rel="canonical" href="https://kiatintienergi.com/Product" />
+      </Head>
       <div className={styles.heroSection}>
         <Image
           src={
